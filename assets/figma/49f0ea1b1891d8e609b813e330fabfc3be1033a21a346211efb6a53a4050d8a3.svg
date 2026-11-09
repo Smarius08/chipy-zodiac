@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="77.837" height="52" viewBox="0 0 77.837 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 15">
+<path id="Rectangle 3555" d="M38.5 51H7C3.68629 51 1 48.3137 1 45V7C1 3.68629 3.68629 1 7 1H47C50.3137 1 53 3.68629 53 7V33" stroke="#B1CB2E" stroke-width="2"/>
+<path id="Vector 26" d="M71.5889 47.4418H76.7378V43.5541H72.6881V40.1523H77.837" stroke="black" stroke-width="2"/>
+<path id="Vector 25" d="M7 10.5H31.5M7 6.5H14.5H22" stroke="#B1CB2E" stroke-width="2"/>
+<g id="bals">
+<circle id="Ellipse 18" cx="10.5" cy="19.5" r="3.5" fill="#B1CB2E"/>
+<circle id="Ellipse 22" cx="10.5" cy="30.5" r="3.5" fill="#B1CB2E"/>
+<circle id="Ellipse 19" cx="21.5" cy="19.5" r="3.5" fill="black"/>
+<circle id="Ellipse 23" cx="21.5" cy="30.5" r="3.5" fill="#B1CB2E"/>
+<circle id="Ellipse 31" cx="3.5" cy="3.5" r="3.5" transform="matrix(-1 0 0 1 36 38)" fill="#B1CB2E"/>
+<circle id="Ellipse 20" cx="32.5" cy="19.5" r="3.5" fill="#B1CB2E"/>
+<circle id="Ellipse 24" cx="32.5" cy="30.5" r="3.5" fill="black"/>
+<circle id="Ellipse 32" cx="3.5" cy="3.5" r="3.5" transform="matrix(-1 0 0 1 25 38)" fill="#B1CB2E"/>
+<circle id="Ellipse 21" cx="43.5" cy="19.5" r="3.5" fill="#B1CB2E"/>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M46.6449 32.038C46.8723 31.5738 47 31.0518 47 30.5C47 28.567 45.433 27 43.5 27C41.567 27 40 28.567 40 30.5C40 31.9264 40.8533 33.1535 42.0773 33.6987C43.3951 32.781 44.9564 32.1886 46.6449 32.038Z" fill="#B1CB2E"/>
+<circle id="Ellipse 33" cx="3.5" cy="3.5" r="3.5" transform="matrix(-1 0 0 1 14 38)" fill="black"/>
+</g>
+</g>
+</svg>

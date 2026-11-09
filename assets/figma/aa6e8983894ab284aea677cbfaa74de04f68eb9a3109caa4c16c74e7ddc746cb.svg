@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="slots-simulator 1">
+<path id="Vector" d="M52.32 15.03H10.68C7.32763 15.03 4.61 17.7476 4.61 21.1V43.1C4.61 46.4524 7.32763 49.17 10.68 49.17H52.32C55.6724 49.17 58.39 46.4524 58.39 43.1V21.1C58.39 17.7476 55.6724 15.03 52.32 15.03Z" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M58.39 25.29H64.92C65.57 25.29 66.09 25.81 66.09 26.46V37.73C66.09 38.38 65.57 38.9 64.92 38.9H58.39" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_3" d="M10.41 64.72V58.6C10.41 57.15 11.58 55.98 13.03 55.98H49.96C51.41 55.98 52.58 57.15 52.58 58.6V64.72" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_4" d="M17.22 15.03V10.16C17.22 8.02 18.95 6.29 21.09 6.29H41.91C44.05 6.29 45.78 8.02 45.78 10.16V15.03" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_5" d="M21.21 63.67H42.63" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_6" d="M15.1 55.97V49.17" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_7" d="M47.01 55.97V49.17" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_8" d="M63.41 25.29V15.03" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_9" d="M63.41 15.03C65.3209 15.03 66.87 13.4809 66.87 11.57C66.87 9.65909 65.3209 8.11 63.41 8.11C61.4991 8.11 59.95 9.65909 59.95 11.57C59.95 13.4809 61.4991 15.03 63.41 15.03Z" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_10" d="M22.45 20.16V43.62" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_11" d="M40.72 20.16V43.62" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_12" d="M21.79 11.12H24.56" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_13" d="M27.33 11.12H30.1" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_14" d="M32.9 11.12H35.67" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_15" d="M38.44 11.12H41.22" stroke="#B1CB2E" stroke-width="2" stroke-miterlimit="10"/>
+<path id="Vector_16" d="M17.71 26.15L13.51 37.42H10.76L14.14 28.53H10.09V26.15H17.71Z" fill="#ED3940"/>
+<path id="Vector_17" d="M35.72 26.15L31.52 37.42H28.77L32.15 28.53H28.1V26.15H35.72Z" fill="#ED3940"/>
+<path id="Vector_18" d="M53.4 26.15L49.2 37.42H46.45L49.83 28.53H45.78V26.15H53.4Z" fill="#ED3940"/>
+</g>
+</svg>
