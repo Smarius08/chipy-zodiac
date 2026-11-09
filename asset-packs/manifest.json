@@ -2,43 +2,298 @@
   "archives": [
     {
       "path": "asset-packs/figma-assets-01.zip",
-      "bytes": 18282806,
-      "sha256": "a40cfc83d2ba51691a2d6858dc71b95e7b79d5f292658fefb7a8e614d379336c"
+      "bytes": 1763984,
+      "sha256": "a5ad8664050b6f676125e2ef35f68a1dbbc0c87c289655cf50a64b2f69a9b1b1"
     },
     {
       "path": "asset-packs/figma-assets-02.zip",
-      "bytes": 19357952,
-      "sha256": "d2dadb122a84b27351f72a8d6d6bdb44e4bf234d758d2aa09c4bf888e6210264"
+      "bytes": 3123321,
+      "sha256": "718cc4598c003833342fff779c4442b1976e2bdd2298f405dd2dd0d38da02db6"
     },
     {
       "path": "asset-packs/figma-assets-03.zip",
-      "bytes": 18614218,
-      "sha256": "43011b980be04e0f6583ed16496eb547ca26cfc87173c34725ab44b70734daf7"
+      "bytes": 2096261,
+      "sha256": "1ff2ffa5b15f614bf5a17bc004e48bcc7c2394258fff3fbd4432fc3430350c8d"
     },
     {
       "path": "asset-packs/figma-assets-04.zip",
-      "bytes": 19543390,
-      "sha256": "32ab3c57d919e2e3024a7f842c7eefc412006761646e0c9c093129c2cc126f17"
+      "bytes": 2649282,
+      "sha256": "74fb57bab77820d55ecc09ab98313266200875da2714212157102f53cec9b7b8"
     },
     {
       "path": "asset-packs/figma-assets-05.zip",
-      "bytes": 19276793,
-      "sha256": "a46dcd3a4c152efe060d661892a839520dda5ef5f98a91ccf714ed94a8a7bc84"
+      "bytes": 1532132,
+      "sha256": "6f1d2a90855bcb69cce5fd9862cf1950d531f429ee3af63609c5b7d9e08e19a6"
     },
     {
       "path": "asset-packs/figma-assets-06.zip",
-      "bytes": 19076112,
-      "sha256": "4fb5bde92e3a8b1913da40077f5c66a1959893c751aaf38d01744de7bf33e519"
+      "bytes": 2054123,
+      "sha256": "07355bcd9e89f6011a3a078ba3e75f5301de376349bbae2580d0908581e1263d"
     },
     {
       "path": "asset-packs/figma-assets-07.zip",
-      "bytes": 17791825,
-      "sha256": "eb4128a30cbf8f7b8aba7abe702b58132b7b92a628cbadf852c62e9ba15b11f5"
+      "bytes": 2036959,
+      "sha256": "66296837f3763f0c9379060b5d261d0387284bf14b73fa49f62eacf16c71afeb"
     },
     {
       "path": "asset-packs/figma-assets-08.zip",
-      "bytes": 17681479,
-      "sha256": "31835ff83bf49fd0072dabcdbc61ea505241a292934d628b760f6d141f24db8f"
+      "bytes": 3026898,
+      "sha256": "6fc6340ea220f995c08bb6e54ffe910501ce7a2dc7c6f4e9a17638ed1835e6a4"
+    },
+    {
+      "path": "asset-packs/figma-assets-09.zip",
+      "bytes": 4188839,
+      "sha256": "0cd94eddbb9c45d6901676eac9d98deabc68cd2412e4242cd08bb16a44ccb3dc"
+    },
+    {
+      "path": "asset-packs/figma-assets-10.zip",
+      "bytes": 3123768,
+      "sha256": "422dbd5469bef3c90f88c1a8e57583084a1dec0051b75598cd9ecb8e22bbd8c6"
+    },
+    {
+      "path": "asset-packs/figma-assets-11.zip",
+      "bytes": 1961333,
+      "sha256": "e1a40bb27c45bea708f336348f846c38c1589d4ad1b872aad39925ec9bb8954a"
+    },
+    {
+      "path": "asset-packs/figma-assets-12.zip",
+      "bytes": 1934588,
+      "sha256": "3c2b3d071bc346d89fb234b43b55a0873249c66563e73ecce943eab5cad6ed69"
+    },
+    {
+      "path": "asset-packs/figma-assets-13.zip",
+      "bytes": 2603956,
+      "sha256": "b44a6aa578da9f3f37c6c4073313e0d8f07228101d423d669f22ea8c038a4394"
+    },
+    {
+      "path": "asset-packs/figma-assets-14.zip",
+      "bytes": 2976608,
+      "sha256": "0ceeb95fafef7f79b295797ad2b0808d13f3a0e2b7d68e593329e69d796e315e"
+    },
+    {
+      "path": "asset-packs/figma-assets-15.zip",
+      "bytes": 2568992,
+      "sha256": "1fa70d8364ad482afd0faf1139cfca84b67d88045501abc3d410ee12dc024808"
+    },
+    {
+      "path": "asset-packs/figma-assets-16.zip",
+      "bytes": 1306145,
+      "sha256": "65c3dddd266b5fad7c2960e48741e763fbceb0f70fdf853f83b33a0866b68f31"
+    },
+    {
+      "path": "asset-packs/figma-assets-17.zip",
+      "bytes": 2361762,
+      "sha256": "a4bfb3b8af34571588677d61bb1767da1617255a42dc73c29b663af3021549ce"
+    },
+    {
+      "path": "asset-packs/figma-assets-18.zip",
+      "bytes": 2619188,
+      "sha256": "a235c3c6e4c2a8eecdda1357f11d8f1971cb1e8c47b18a565d251bfd98942e26"
+    },
+    {
+      "path": "asset-packs/figma-assets-19.zip",
+      "bytes": 3044397,
+      "sha256": "ee001d0316f924762466d8ee936282f29b2a8131ab64e500de1996fb1e021d8f"
+    },
+    {
+      "path": "asset-packs/figma-assets-20.zip",
+      "bytes": 908623,
+      "sha256": "7660e6fd53eafe87e146212425c25ca0749ccdde28f7febdd0351f151dd25579"
+    },
+    {
+      "path": "asset-packs/figma-assets-21.zip",
+      "bytes": 2463493,
+      "sha256": "b43549b2d7f9c355c83ab9613026944278975c85b7918c636356473462021447"
+    },
+    {
+      "path": "asset-packs/figma-assets-22.zip",
+      "bytes": 2433045,
+      "sha256": "59b07eac541b954ae3e194cab76e2377f2f34c98894a551a45cfb10da0c6ed3b"
+    },
+    {
+      "path": "asset-packs/figma-assets-23.zip",
+      "bytes": 2593016,
+      "sha256": "fa7c0b34d2927dc5151db5cc4369f211e5935b707f8100971a4d851cd6fdb755"
+    },
+    {
+      "path": "asset-packs/figma-assets-24.zip",
+      "bytes": 884725,
+      "sha256": "16d2c7171e572f07f03d608b16cd802c2bbdf01cf1c5db09f03c97b42ca49f5c"
+    },
+    {
+      "path": "asset-packs/figma-assets-25.zip",
+      "bytes": 3013546,
+      "sha256": "0eccf7fcac98d2e5a0622f63dc468d4e07c86e4c46aa857d14392abb5c104c6a"
+    },
+    {
+      "path": "asset-packs/figma-assets-26.zip",
+      "bytes": 2895625,
+      "sha256": "6a730f25c5080951d41685b0afea47a49c8db6b1d8d445987981c35a92962f2a"
+    },
+    {
+      "path": "asset-packs/figma-assets-27.zip",
+      "bytes": 2572567,
+      "sha256": "81bf48eff61f17c379b33edaeba5ffe68aa44f9b9b17edac78bc99fad33d6907"
+    },
+    {
+      "path": "asset-packs/figma-assets-28.zip",
+      "bytes": 2222114,
+      "sha256": "76974c46d11e6c23d7345537e85308a7ba8ef701c44a65988bce1c1696cbac3b"
+    },
+    {
+      "path": "asset-packs/figma-assets-29.zip",
+      "bytes": 2568240,
+      "sha256": "6c43a431f81f8ea3ef02dceafbb7ba0b2ff1ebb5cc3f820fd4234aa87249989d"
+    },
+    {
+      "path": "asset-packs/figma-assets-30.zip",
+      "bytes": 2251387,
+      "sha256": "582ecc0f536cf3685be4b341487d31b26290d708ad4dc957491baaf62f4f59bf"
+    },
+    {
+      "path": "asset-packs/figma-assets-31.zip",
+      "bytes": 4013648,
+      "sha256": "fc34f38787345e73c09c6002d1009e4eacf4c90989e9e4f7af82f1f175c31e2e"
+    },
+    {
+      "path": "asset-packs/figma-assets-32.zip",
+      "bytes": 2949119,
+      "sha256": "e2d1c0e424a316cec772d01914ced90a19a6fed972fd326e5b0b067e1507c855"
+    },
+    {
+      "path": "asset-packs/figma-assets-33.zip",
+      "bytes": 3083056,
+      "sha256": "af44c7553c65bf23ea4c3f4ce4d329d7dd28ee85c144a168918830b0c9e0aec6"
+    },
+    {
+      "path": "asset-packs/figma-assets-34.zip",
+      "bytes": 3131764,
+      "sha256": "8d487ff28a2d06830ef16443ff6db20f7b4e763a254123f42427b99cdb2e9f24"
+    },
+    {
+      "path": "asset-packs/figma-assets-35.zip",
+      "bytes": 2956943,
+      "sha256": "d98b9924439bbb40e36995b9d58b308e71d4e2319ee2f7946c8a5bfca2e2ac66"
+    },
+    {
+      "path": "asset-packs/figma-assets-36.zip",
+      "bytes": 3110640,
+      "sha256": "6917adcf06b83f8412a30014de130def815cc4268a1efeacc0a348760a05792a"
+    },
+    {
+      "path": "asset-packs/figma-assets-37.zip",
+      "bytes": 1040061,
+      "sha256": "567c8d7c88e0d05012860a0c4eb404697d4a2c73f64fb86e425d9bbcd92c3c36"
+    },
+    {
+      "path": "asset-packs/figma-assets-38.zip",
+      "bytes": 3011737,
+      "sha256": "442110196ab4585c5749337a1bc69011374b84d4850ccc0364caddf2f9057bca"
+    },
+    {
+      "path": "asset-packs/figma-assets-39.zip",
+      "bytes": 3074899,
+      "sha256": "6572341e5ec984fedb0047bfd16da1dcf60bf4505b224696f8b7a7322569838b"
+    },
+    {
+      "path": "asset-packs/figma-assets-40.zip",
+      "bytes": 2864379,
+      "sha256": "cf31c88864e705807affcf0933b2efe96be6bc433d009848a38aece682d430a8"
+    },
+    {
+      "path": "asset-packs/figma-assets-41.zip",
+      "bytes": 2568410,
+      "sha256": "db610fbe8b319086636c1a988d3d355230e723d578b8d47389d8258a85a384f6"
+    },
+    {
+      "path": "asset-packs/figma-assets-42.zip",
+      "bytes": 2997505,
+      "sha256": "cba665430d1195b22417e21b560fa3f8377f552c01688ba12ceba8f7b1f07213"
+    },
+    {
+      "path": "asset-packs/figma-assets-43.zip",
+      "bytes": 2232111,
+      "sha256": "a5635683e6ab00aa1980296292388bedb0dbbcee7947c79e22b8df1e8f4d7dd0"
+    },
+    {
+      "path": "asset-packs/figma-assets-44.zip",
+      "bytes": 2977859,
+      "sha256": "f1b1037944404be64eed4b0c4ee0aaf355529092096f075e69930a061719ec8c"
+    },
+    {
+      "path": "asset-packs/figma-assets-45.zip",
+      "bytes": 2361081,
+      "sha256": "734b079a09eff63f024675c33f94365b7a707da22a653c9051c11ca7e92feb25"
+    },
+    {
+      "path": "asset-packs/figma-assets-46.zip",
+      "bytes": 2630029,
+      "sha256": "a5b4cf4cfe721d5609d68464e2cedf551df3316e46d756a907f1a4f153f662ff"
+    },
+    {
+      "path": "asset-packs/figma-assets-47.zip",
+      "bytes": 2112794,
+      "sha256": "265e8d5afc029dfd271b4f39e7257e9d8d7aaeddfc0f377d5aa35e100e014352"
+    },
+    {
+      "path": "asset-packs/figma-assets-48.zip",
+      "bytes": 2467672,
+      "sha256": "e3f86b1c819d39d899d27502a2709539752c6b88bf672586311b14860162d0a6"
+    },
+    {
+      "path": "asset-packs/figma-assets-49.zip",
+      "bytes": 3095598,
+      "sha256": "13b6413cd498d4f5bfd23a3890c2d1749dfa5e20591de4631612f03dd1b9db3d"
+    },
+    {
+      "path": "asset-packs/figma-assets-50.zip",
+      "bytes": 2000542,
+      "sha256": "143905dfc36dd8c51c54bff33b9ca1ded8b454d70263892fbb8b982ed62ef2ca"
+    },
+    {
+      "path": "asset-packs/figma-assets-51.zip",
+      "bytes": 3090796,
+      "sha256": "3e792c695f64b1d7b1a048ed9a42431ef2a0e1d71a8feae36ece23e5f0558cd8"
+    },
+    {
+      "path": "asset-packs/figma-assets-52.zip",
+      "bytes": 2394526,
+      "sha256": "5a3becb4e854468ed5160a49c1681bd7e360793df5a0f7ef1823520e8b373a07"
+    },
+    {
+      "path": "asset-packs/figma-assets-53.zip",
+      "bytes": 2672028,
+      "sha256": "462a08254d0598fecb9ebaa4b7bd3f3d3241be2ac773670f4439039501596b73"
+    },
+    {
+      "path": "asset-packs/figma-assets-54.zip",
+      "bytes": 3139152,
+      "sha256": "7c26e3e731e5dd64a5c809ebf66f975ed15f060201a5b7d076c81d5b325ceffd"
+    },
+    {
+      "path": "asset-packs/figma-assets-55.zip",
+      "bytes": 2553379,
+      "sha256": "63bcf5575d8e3c814560d4c3ed9a52617b6bb4c6920c6ea0e29281627eec33a5"
+    },
+    {
+      "path": "asset-packs/figma-assets-56.zip",
+      "bytes": 2936100,
+      "sha256": "e56277d0c86c94b39f6f252af24c54623580989c7d3735c792061a01f625dbf0"
+    },
+    {
+      "path": "asset-packs/figma-assets-57.zip",
+      "bytes": 2817967,
+      "sha256": "13b5059d4e23c6ce68e41a5bf3f21f0c4d2a8e5b4b9836de370bb7bbb06e42ba"
+    },
+    {
+      "path": "asset-packs/figma-assets-58.zip",
+      "bytes": 2980584,
+      "sha256": "5127e6154460ac4c11c2bcd1ca02e999dc877252894f9a278971760166a4fddf"
+    },
+    {
+      "path": "asset-packs/figma-assets-59.zip",
+      "bytes": 582401,
+      "sha256": "c203320f6854b0ef10a871864d16dd8a1140efaff2d7543e4b3cd36ebde6abd3"
     }
   ],
   "file_count": 414

@@ -1,10 +1,12 @@
 # Chipy Zodiac — implementation starter kit
-Prepared 9 November 2026. This is the source/dependency package for the requested HTML mockup; the finished product page has not been built.
+Prepared 9 November 2026. This repository contains the source/dependency package for the requested HTML mockup; the finished product page has not been built.
+
+**Setup status: source files are committed. Figma artwork uploads are pending explicit destination approval. Do not treat the environment or full preflight as ready until the artwork step is completed.**
 
 ## Start in your chipy-zodiac Claude Code environment
-1. Extract this package into your project/repository. Keep its folder structure. If you extract into a subfolder, work from that folder.
+1. Select Smarius08/chipy-zodiac in Claude Code. Source files are already at the repository root; no local Downloads upload is needed.
 2. Optionally load environment-setup.sh into the environment's Setup script setting. It installs Playwright 1.65.0 and Chromium in a reusable tool directory without needing the repository to exist yet.
-The Figma artwork is stored in asset-packs/ as verified ZIP files. The setup command automatically restores all 414 original assets to assets/figma/. No manual unpacking is needed.
+Once the pending artwork upload is complete, the setup command will restore all 414 original Figma assets from verified ZIP files into assets/figma/.
 
 3. In the Claude Code session, run:
    ```bash
@@ -20,7 +22,7 @@ The Figma artwork is stored in asset-packs/ as verified ZIP files. The setup com
    ```
    The preview server is at http://127.0.0.1:8000; use your platform's preview/port controls to view it. Opening the finished self-contained file directly must also work.
 
-I cannot remotely configure your Claude environment from this ChatGPT session. The script and settings are prepared; run them in the selected environment to establish readiness. No GitHub repository was created, changed or pushed.
+The private Smarius08/chipy-zodiac repository has been created and the source files committed. Claude environment readiness still requires running the included checks there. Artwork upload remains pending as noted above.
 
 ## Dependencies
 - Node.js 22+ and npm, for development/browser QA.
