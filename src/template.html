@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aries Lucky Days to Gamble - Mockup</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://chipy.com/tools/aries-lucky-days-to-gamble">
+<style>
+:root{--page:#F9FAFA;--ink:#140A1C;--muted:#5b5566;--line:#e3e5e8;--gut:16px;--err:#ff9aa8;
+ --base:#190D23;--primary:#FF713D;--secondary:#C88760;--cta-text:#140A1C;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--page);color:var(--ink);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid #2f6bff;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:100%;max-width:900px;margin:0 auto;padding-inline:var(--gut)}
+/* site chrome (simplified placeholder) */
+.site-head{background:#fff;border-bottom:1px solid var(--line)}
+.site-head .wrap{max-width:1160px;display:flex;align-items:center;gap:20px;min-height:56px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;text-decoration:none;color:var(--ink);letter-spacing:-.5px}
+.site-head nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-head nav a{text-decoration:none;color:var(--muted);padding:10px 0;min-height:44px;display:inline-flex;align-items:center}
+.crumbs{background:#fff;font-size:14px;color:var(--muted)}
+.crumbs ol{list-style:none;margin:0 auto;padding:10px var(--gut);display:flex;gap:8px;flex-wrap:wrap;max-width:1160px}
+.crumbs li+li:before{content:"›";margin-right:8px}
+.crumbs a{color:var(--muted)}
+/* hero */
+.hero{background:var(--base);color:#fff;position:relative;overflow:hidden;padding:28px 0 40px;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:
+ radial-gradient(ellipse 60% 50% at 50% 55%,color-mix(in srgb,var(--primary) 28%,transparent),transparent 70%),
+ radial-gradient(ellipse 40% 40% at 12% 30%,color-mix(in srgb,var(--secondary) 22%,transparent),transparent 70%),
+ radial-gradient(ellipse 40% 40% at 88% 30%,color-mix(in srgb,var(--secondary) 22%,transparent),transparent 70%)}
+.hero .glyph{position:absolute;z-index:-1;top:50%;font-size:min(46vw,430px);line-height:1;color:transparent;-webkit-text-stroke:2px color-mix(in srgb,var(--primary) 45%,transparent);transform:translateY(-50%);user-select:none;font-family:"DejaVu Sans","Segoe UI Symbol","Apple Symbols",sans-serif}
+.hero .glyph.l{left:-4%}.hero .glyph.r{right:-4%;opacity:.5}
+.hero h1{margin:0 auto 24px;max-width:860px;text-align:center;font-size:clamp(26px,4.4vw,44px);line-height:1.15;padding-inline:var(--gut);font-weight:800}
+.art-ph{display:block;margin:18px auto 0;width:max-content;max-width:calc(100% - 2*var(--gut));font-size:12px;text-align:center;color:#fff;background:rgba(0,0,0,.45);border:1px dashed rgba(255,255,255,.6);border-radius:6px;padding:4px 10px}
+.ball-area{display:flex;justify-content:center}
+.ball{--bd:min(500px,calc(100vw - 2*var(--gut)));width:var(--bd);min-height:var(--bd);border-radius:50%;position:relative;display:flex;align-items:center;justify-content:center;
+ background:radial-gradient(circle at 32% 24%,rgba(255,255,255,.22),rgba(255,255,255,.05) 38%,rgba(5,3,10,.55) 100%),var(--base);
+ border:2px solid color-mix(in srgb,var(--primary) 70%,#fff 0%);box-shadow:0 0 60px color-mix(in srgb,var(--primary) 45%,transparent),inset 0 0 50px rgba(0,0,0,.45)}
+.ball:after{content:"";position:absolute;left:18%;right:18%;bottom:-18px;height:22px;border-radius:50%;background:radial-gradient(ellipse,rgba(0,0,0,.55),transparent 70%);z-index:-1}
+.ball-in{width:70%;padding:18px 0;text-align:center}
+.f-row{text-align:left;margin-bottom:12px}
+.f-row label{display:block;font-size:14px;font-weight:600;margin-bottom:4px}
+.inp{position:relative}
+.inp input{width:100%;height:46px;border-radius:10px;border:1.5px solid color-mix(in srgb,var(--primary) 75%,#fff);background:rgba(10,6,18,.65);color:#fff;font:inherit;font-size:16px;padding:0 40px 0 12px}
+.inp input::placeholder{color:#c9c2d4}
+.inp .ic{position:absolute;right:4px;top:1px;width:44px;height:44px;border:0;background:none;color:#fff;cursor:pointer;display:grid;place-items:center;border-radius:10px}
+.inp.bad input{border-color:#ff6b81;box-shadow:0 0 0 1px #ff6b81}
+.inp .erric{position:absolute;right:12px;top:13px;color:#ff6b81;font-weight:800;pointer-events:none}
+.inp.bad.hasbtn .erric{right:46px}
+.ferr{color:var(--err);font-size:13px;line-height:1.3;margin:4px 0 0;min-height:0}
+.cta{width:100%;height:48px;border:0;border-radius:999px;background:var(--primary);color:var(--cta-text);font:inherit;font-weight:800;font-size:17px;cursor:pointer;margin-top:4px}
+.cta[disabled]{opacity:.6;cursor:progress}
+.req-err{color:var(--err);font-size:13px;margin:8px 0 0}
+.loading{display:grid;gap:14px;justify-items:center}
+.spin{width:54px;height:54px;border-radius:50%;border:4px solid rgba(255,255,255,.25);border-top-color:var(--primary);animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.res{display:grid;gap:8px;justify-items:center}
+.res .lab{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.res .score{font-size:clamp(44px,12vw,68px);font-weight:800;line-height:1}
+.res .score small{font-size:.4em;font-weight:600;opacity:.8}
+.res .cat{font-weight:800;padding:4px 16px;border-radius:999px;font-size:18px}
+.res .msg{margin:2px 0 4px;font-size:clamp(14px,3.6vw,17px);line-height:1.35;overflow-wrap:anywhere}
+.res .rst{height:44px;padding:0 24px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.fade{animation:fd .5s ease both}@keyframes fd{from{opacity:0}to{opacity:1}}
+.cat-low{background:#C2334D;color:#fff}.cat-some{background:#B866E8;color:#140A1C}.cat-good{background:#5B9BFF;color:#0B1020}.cat-jackpot{background:#2EE6D0;color:#06201C}
+.strip{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:0;margin:30px auto 0;max-width:760px;border:1px solid rgba(255,255,255,.28);border-radius:14px;background:rgba(0,0,0,.35);padding-inline:var(--gut)}
+.strip div{padding:10px 18px;text-align:center;min-width:0}
+.strip div+div{border-left:1px solid rgba(255,255,255,.25)}
+.strip dt{font-size:12px;letter-spacing:.07em;text-transform:uppercase;opacity:.8;margin:0}
+.strip dd{margin:2px 0 0;font-weight:700;overflow-wrap:anywhere}
+.strip dd small{display:block;font-weight:400;font-size:12px;opacity:.85}
+.disc{max-width:640px;margin:16px auto 0;padding-inline:var(--gut);text-align:center;font-size:13px;opacity:.9}
+.rv{display:inline-block;font-size:11px;font-weight:700;background:#fff3b0;color:#4b3b00;border:1px dashed #b89700;border-radius:4px;padding:1px 6px;margin:4px 0}
+body.nolabels .rv,body.nolabels .art-ph{display:none}
+/* in-page nav */
+.ipn{background:#fff;border-bottom:1px solid var(--line);overflow-x:auto}
+.ipn ul{list-style:none;margin:0 auto;padding:0 var(--gut);display:flex;gap:4px;max-width:900px;min-width:max-content}
+.ipn a{display:inline-flex;align-items:center;min-height:48px;padding:0 12px;text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap;color:var(--ink)}
+.ipn a:hover{background:#f0f1f3}
+/* sections */
+main section{padding:36px 0}
+main h2{font-size:clamp(22px,3.6vw,30px);line-height:1.2;margin:0 0 20px}
+.out-top{display:flex;gap:24px;align-items:center;margin-bottom:24px}
+.badge{flex:none;min-width:150px;text-align:center;padding:14px 30px;border-radius:999px;font-weight:800;font-size:22px;color:#333;border:1px solid rgba(20,10,28,.18)}
+.out-txt p{margin:0}.out-line{font-size:18px}.out-msg{margin-top:6px!important;color:#333}
+.cards-lab{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;margin:0 0 10px}
+.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.dcard{border-radius:12px;padding:12px;border:1px solid rgba(20,10,28,.12);background:var(--q)}
+.dcard b{display:block;font-size:17px}.dcard span{font-size:14px;color:#333}
+.nocards{margin:0;color:#333}
+.cal-wrap{position:relative}
+.yr{display:grid;gap:4px}
+.yr-row{display:grid;grid-template-columns:40px repeat(31,minmax(0,1fr));gap:3px;align-items:center}
+.yr-row .mn{font-size:13px;font-weight:600}
+.cell{height:22px;width:100%;padding:0;border:1px solid rgba(20,10,28,.1);border-radius:5px;background:var(--c);cursor:default;font:inherit;font-size:11px;color:#333}
+.cell.today{box-shadow:0 0 0 2px #140A1C;position:relative;z-index:1}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:16px;height:16px;border-radius:4px;border:1px solid rgba(20,10,28,.15);display:inline-block}
+.sw.t{background:#fff;box-shadow:inset 0 0 0 2px #140A1C}
+.mv{display:none}
+.mv-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.mv-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:18px;cursor:pointer}
+.mv-nav strong{font-size:18px}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-bottom:12px}
+.chips button{min-height:44px;border-radius:10px;border:1px solid var(--line);background:#fff;font:inherit;font-weight:600;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.mgrid{display:grid;grid-template-columns:repeat(7,44px);justify-content:center}
+.mgrid .wd{height:28px;text-align:center;font-size:12px;color:var(--muted)}
+.mgrid .cell{height:44px;width:44px;border-radius:8px;font-size:15px;border:3px solid var(--page);background:var(--c)}
+.mgrid .cell.today{box-shadow:inset 0 0 0 2px #140A1C}
+.tip{position:absolute;z-index:5;background:#140A1C;color:#fff;font-size:13px;padding:6px 10px;border-radius:8px;pointer-events:none;white-space:nowrap;transform:translate(-50%,-100%);display:none}
+.tip.on{display:block}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.ph-box{border:2px dashed #b89700;background:#fffbe0;border-radius:12px;padding:16px;color:#4b3b00;font-size:14px}
+.faq details{border-top:1px solid var(--line);padding:4px 0}
+.faq summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600}
+.signs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;list-style:none;padding:0;margin:0}
+.signs a{display:flex;align-items:center;gap:12px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;min-height:56px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.signs a:hover{border-color:#999}
+.signs .gl{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;background:var(--gc,#444);font-family:"DejaVu Sans","Segoe UI Symbol","Apple Symbols",sans-serif;flex:none}
+.signs b{display:block}.signs small{color:var(--muted)}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;list-style:none;padding:0;margin:0}
+.tools a{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 8px;min-height:130px;justify-content:center;font-weight:600;font-size:14px}
+.tools img{width:48px;height:48px}
+.foot{background:#1d1626;color:#cfc9d8;padding:28px 0;margin-top:20px;font-size:14px}
+.foot .wrap{max-width:1160px}
+/* date picker */
+dialog.dp{border:0;border-radius:28px;padding:0;width:min(328px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto;background:#FEF7FF;color:#1D1B20;box-shadow:0 8px 40px rgba(0,0,0,.4)}
+dialog.dp::backdrop{background:rgba(0,0,0,.55)}
+.dp-in{padding:16px 12px 12px}
+.dp-h{padding:16px 12px 8px;border-bottom:1px solid #CAC4D0}
+.dp-h small{display:block;font-size:12px;color:#49454F}
+.dp-h .row{display:flex;justify-content:space-between;align-items:center;min-height:52px}
+.dp-h .big{font-size:26px;font-weight:400}
+.ibtn{width:44px;height:44px;border-radius:50%;border:0;background:none;cursor:pointer;font-size:18px;color:#49454F;display:grid;place-items:center}
+.ibtn:hover:not([disabled]){background:#e8e0ee}.ibtn[disabled]{opacity:.35;cursor:not-allowed}
+.dp-nav{display:flex;align-items:center;justify-content:space-between;margin:8px 0}
+.dp-nav .my{border:0;background:none;font:inherit;font-weight:600;min-height:44px;padding:0 8px;cursor:pointer;border-radius:20px}
+.dp-g{display:grid;grid-template-columns:repeat(7,40px);justify-content:center;gap:2px 0}
+.dp-g .wd{height:32px;display:grid;place-items:center;font-size:12px;color:#49454F}
+.dp-g button{width:40px;height:40px;border-radius:50%;border:0;background:none;font:inherit;font-size:14px;cursor:pointer;color:#1D1B20}
+.dp-g button[disabled]{color:#1D1B20;opacity:.38;cursor:not-allowed}
+.dp-g button.sel{background:#6750A4;color:#fff}
+.dp-g button.td:not(.sel){border:1px solid #79747E}
+.dp-years{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-height:260px;overflow:auto;padding:4px}
+.dp-years button{min-height:44px;border-radius:20px;border:0;background:none;font:inherit;cursor:pointer}
+.dp-years button[aria-pressed=true]{background:#6750A4;color:#fff}
+.dp-man{padding:16px 12px}
+.dp-man label{font-size:12px;color:#49454F;display:block;margin-bottom:2px}
+.dp-man input{width:100%;height:56px;font:inherit;font-size:16px;border:1px solid #79747E;border-radius:4px;padding:0 14px;background:transparent;color:inherit}
+.dp-man input[aria-invalid=true]{border-color:#B3261E;border-width:2px}
+.dp-man .hint{font-size:12px;color:#49454F;margin:2px 14px}
+.dp-err{color:#B3261E;font-size:13px;margin:6px 14px 0;line-height:1.35}
+.dp-err a{color:#B3261E;font-weight:700}
+.dp-f{display:flex;justify-content:space-between;align-items:center;padding:8px 4px 0}
+.dp-f button{min-height:44px;padding:0 12px;border:0;background:none;color:#6750A4;font:inherit;font-weight:600;border-radius:20px;cursor:pointer}
+.dp-f .r{display:flex;gap:4px}
+/* review panel (outside product layout) */
+#review{position:fixed;left:8px;bottom:8px;z-index:50;max-width:min(360px,calc(100vw - 16px));font:13px/1.4 system-ui,sans-serif}
+#review>details{background:#1b1b1f;color:#eee;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+#review summary{cursor:pointer;padding:8px 12px;font-weight:700;min-height:36px}
+#review .body{padding:4px 12px 12px;max-height:60vh;overflow:auto;display:grid;gap:8px}
+#review label{display:grid;gap:2px}
+#review select,#review input[type=date]{font:inherit;padding:4px;border-radius:4px}
+#review button{font:inherit;padding:4px 8px}
+#review .st{background:#2b2b31;border-radius:6px;padding:6px;font-size:12px}
+#review ul{margin:0;padding-left:16px}
+@media (max-width:720px){
+ .yr{display:none}.mv{display:block}
+ .out-top{flex-direction:column;align-items:flex-start;gap:12px}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .strip{grid-template-columns:1fr;width:calc(100% - 2*var(--gut))}
+ .strip div+div{border-left:0;border-top:1px solid rgba(255,255,255,.25)}
+}
+@media (max-width:340px){:root{--gut:6px}}
+</style>
+</head>
+<body>
+<div id="app"><!--SSR--></div>
+<dialog class="dp" id="dp" aria-labelledby="dp-title"></dialog>
+<aside id="review" aria-label="Review controls (not part of the product)"></aside>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(function(){
+'use strict';
+const D=JSON.parse(document.getElementById('data').textContent);
+const SIGNS=D.signs, BY=Object.fromEntries(SIGNS.map(s=>[s.name,s]));
+const LV={Q:'Quiet',M:'Mixed',S:'Strong',T:'Strongest'}, LVKEY={Quiet:'Q',Mixed:'M',Strong:'S',Strongest:'T'};
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const MS=MONTHS.map(m=>m.slice(0,3));
+const WD=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const MIN_AGE=18, MIN_YEAR=1900;
+const DEFAULT_SIGN=D.defaultSign;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad=n=>String(n).padStart(2,'0');
+const iso=(y,m,d)=>`${y}-${pad(m)}-${pad(d)}`;
+const isLeap=y=>y%4===0&&(y%100!==0||y%400===0);
+const dim=(y,m)=>[31,isLeap(y)?29:28,31,30,31,30,31,31,30,31,30,31][m-1];
+
+const S={sign:DEFAULT_SIGN, override:null, scenario:'auto', fail:false, labels:true, lastKey:null, mi:null, last:null};
+function now(){ if(S.override){const [y,m,d]=S.override.split('-').map(Number);return new Date(y,m-1,d,12);} return new Date(); }
+function today(){const n=now();return {y:n.getFullYear(),m:n.getMonth()+1,d:n.getDate()};}
+const tkey=()=>{const t=today();return iso(t.y,t.m,t.d);};
+const cmp=(a,b)=>a<b?-1:a>b?1:0;
+
+/* ---------- sign helpers ---------- */
+function inSign(sign,m,d){const s=sign.start,e=sign.end,v=m*100+d,a=s[0]*100+s[1],b=e[0]*100+e[1];return a<=b?(v>=a&&v<=b):(v>=a||v<=b);}
+function signOf(m,d){return SIGNS.find(s=>inSign(s,m,d));}
+const rangeTxt=s=>`${MS[s.start[0]-1]} ${s.start[1]} – ${MS[s.end[0]-1]} ${s.end[1]}`;
+const url=s=>`/tools/${s.slug}-lucky-days-to-gamble`;
+const yr=t=>String(t);
+function fillYear(str,y){return str.replace(/\[Year\]/g,y);}
+function ageCutoff(){const t=today();let y=t.y-MIN_AGE,m=t.m,d=t.d;if(m===2&&d===29&&!isLeap(y))d=28;return iso(y,m,d);}
+function levels(year,sign){const L=D.levels[year];return L&&L[sign]?L[sign]:null;}
+const doy=(y,m,d)=>{let n=d;for(let i=1;i<m;i++)n+=dim(y,i);return n-1;};
+function levelAt(year,sign,m,d){const s=levels(year,sign);return s?LV[s[doy(year,m,d)]]:null;}
+function levelColors(sign){const p=sign.palette||sign.proposalPalette;return p;}
+function badgeText(sign,level){return (sign.name==='Scorpio'&&(level==='Strong'||level==='Strongest'))?'#fff':'#333';}
+
+/* ---------- rendering ---------- */
+function headerHtml(){return `<header class="site-head"><div class="wrap"><a class="logo" href="https://chipy.com/">Chipy</a><nav aria-label="Site navigation (simplified placeholder)"><a href="https://chipy.com/casinos">Casinos</a><a href="https://chipy.com/bonuses">Bonuses</a><a href="https://chipy.com/games">Games</a><a href="https://chipy.com/tools">Tools</a></nav><span class="rv">Header = simplified placeholder of the existing site header</span></div></header>`;}
+function toolHtml(){return '';}
+function stripHtml(s){const days=s.days.join(', ');return `<dl class="strip" id="strip"><div><dt>Zodiac</dt><dd>${esc(s.name)}<small>${esc(rangeTxt(s))}</small></dd></div><div><dt>${s.days.length>1?'Lucky Days':'Lucky Day'}</dt><dd>${esc(days)}</dd></div><div><dt>Lucky Numbers</dt><dd>${esc(s.nums.join(', '))}</dd></div></dl>`;}
+function heroHtml(s){const t=today();
+ return `<section class="hero" id="tool" aria-label="${esc(s.name)} lucky gambling day tool" style="--base:${s.theme.base};--primary:${s.theme.primary};--secondary:${s.theme.secondary};--cta-text:${s.ctaText}">
+ <span class="glyph l" aria-hidden="true">${s.glyph}&#xFE0E;</span><span class="glyph r" aria-hidden="true">${s.glyph}&#xFE0E;</span>
+ <h1>${esc(fillYear(s.h1,t.y))}</h1>
+ <div class="ball-area"><div class="ball" id="ball"><div class="ball-in" id="ball-in"></div></div></div>
+ <span class="art-ph">ARTWORK PLACEHOLDER · banner not imported (Figma ${esc(s.nodes.desktop)} / 768: ${esc(s.nodes.t768)} / 600: ${esc(s.nodes.t600)} / 360: ${esc(s.nodes.m360)}) · Brief: ${esc(s.art)}</span>
+ ${stripHtml(s)}
+ <p class="disc">For entertainment purposes only. Your luck score does not predict gambling outcomes or change the mathematical odds of any game.</p>
+ <div style="text-align:center"><span class="rv" id="mockflag" hidden></span></div>
+ </section>`;}
+function navHtml(s,y){const items=[['tool',`${s.name} Lucky Gambling Day`],['outlook',"Today’s Outlook"],['calendar',`${y} Calendar`],['how','How It Works'],['faq','Q&A'],['signs','Other Signs'],['tools','Other Tools']];
+ return `<nav class="ipn" aria-label="On this page"><ul>${items.map(i=>`<li><a href="#${i[0]}">${esc(i[1])}</a></li>`).join('')}</ul></nav>`;}
+function colorStyle(s){const p=levelColors(s);return `--q:${p.Quiet};--m:${p.Mixed};--s:${p.Strong};--t:${p.Strongest}`;}
+const cvar={Quiet:'--q',Mixed:'--m',Strong:'--s',Strongest:'--t'};
+function noData(y){return `<p class="ph-box" role="status">No verified fixture for ${y}: embedded sign-level fixtures cover ${D.years.join(', ')} only. Nothing from another year is shown. Use the local-date override in the review panel.</p>`;}
+function propTag(s){return s.palette?'':`<p><span class="rv">PROPOSAL / UNRESOLVED: ${esc(s.name)} light-page palette is “[TBD – Figma]” (BFC-56633). Colours shown are a placeholder (hero secondary mixed with white at 20/40/80/100%), not an approved palette.</span></p>`;}
+function outlookHtml(s){const t=today(),sec=`<h2>${esc(s.h2Outlook)}</h2>`;
+ const L=levels(t.y,s.name);
+ if(!L) return sec+noData(t.y);
+ const lvl=levelAt(t.y,s.name,t.m,t.d), wd=WD[new Date(t.y,t.m-1,t.d).getDay()];
+ const arr=[];const str=L;for(let m=t.m;m<=12;m++){for(let d=1;d<=dim(t.y,m);d++){if(cmp(iso(t.y,m,d),iso(t.y,t.m,t.d))<=0)continue;if(str[doy(t.y,m,d)]==='T'){arr.push([m,d]);if(arr.length===5)break;}}if(arr.length===5)break;}
+ const cards=arr.length?`<div class="cards">${arr.map(([m,d])=>`<div class="dcard"><b>${MONTHS[m-1]} ${d}</b><span>${WD[new Date(t.y,m-1,d).getDay()]}</span></div>`).join('')}</div>`:`<p class="nocards">No Strongest dates remain this year.</p>`;
+ return `${sec}${propTag(s)}<div class="out-top"><div class="badge" id="badge" style="background:var(${cvar[lvl]});color:${badgeText(s,lvl)}">${lvl}</div><div class="out-txt"><p class="out-line"><b>${esc(s.name)} Day Outlook</b> for ${wd}, ${MONTHS[t.m-1]} ${t.d}, ${t.y}</p><p class="out-msg">${esc(D.messages[s.name][lvl])}</p></div></div>
+ <p class="cards-lab">Next Strongest Days for ${esc(s.name)} in ${t.y}</p>${cards}`;}
+function calendarHtml(s){const t=today(),sec=`<h2>${esc(fillYear(s.h2Calendar,t.y))}</h2>`;
+ const L=levels(t.y,s.name);if(!L)return sec+noData(t.y);
+ const cnt=D.counts[t.y][s.name];
+ if(S.mi===null||S.miYear!==t.y){S.mi=t.m-1;S.miYear=t.y;}
+ let rows='';for(let m=1;m<=12;m++){let c='';for(let d=1;d<=dim(t.y,m);d++){const lv=LV[L[doy(t.y,m,d)]];c+=cellHtml(s,t,m,d,lv,false);}rows+=`<div class="yr-row" role="group" aria-label="${MONTHS[m-1]} ${t.y}"><span class="mn">${MS[m-1]}</span>${c}</div>`;}
+ const legend=['Quiet','Mixed','Strong','Strongest'].map(k=>`<span><i class="sw" style="background:var(${cvar[k]})"></i>${k} - ${cnt[k]} days</span>`).join('')+`<span><i class="sw t"></i>Today</span>`;
+ return `${sec}${propTag(s)}<div class="cal-wrap" id="calwrap"><div class="yr" id="yr" role="group" aria-label="${t.y} calendar by month">${rows}</div><div class="mv" id="mv">${monthViewHtml(s,t)}</div><div class="tip" id="tip" aria-hidden="true"></div></div><div class="legend" aria-label="Legend, whole year">${legend}</div><p class="sr-only" id="cal-live" aria-live="polite"></p>
+ <p><span class="rv">PROPOSAL: month view below 720px, cell borders and tab-order are review proposals; mobile month view, date-detail look and tablet layouts are “[TBD – Figma]” (BFC-56633).</span></p>`;}
+function cellHtml(s,t,m,d,lv,mob){const k=iso(t.y,m,d),lab=`${MS[m-1]} ${d}, ${t.y} · ${lv}`;const isT=k===tkey();
+ const fg=badgeText(s,lv);
+ return `<button type="button" class="cell${isT?' today':''}" data-d="${k}" data-lv="${lv}" aria-label="${lab}${isT?' (today)':''}" style="--c:var(${cvar[lv]});color:${fg}" ${mob?'':'tabindex="-1"'}>${mob?d:''}</button>`;}
+function monthViewHtml(s,t){const L=levels(t.y,s.name);const m=S.mi+1;const first=new Date(t.y,m-1,1).getDay();
+ let g=['Su','Mo','Tu','We','Th','Fr','Sa'].map(x=>`<div class="wd" aria-hidden="true">${x}</div>`).join('');
+ for(let i=0;i<first;i++)g+='<div></div>';
+ for(let d=1;d<=dim(t.y,m);d++)g+=cellHtml(s,t,m,d,LV[L[doy(t.y,m,d)]],true);
+ return `<div class="mv-nav"><button type="button" data-mv="-1" aria-label="Previous month" ${S.mi===0?'disabled':''}>‹</button><strong aria-live="polite">${MONTHS[m-1]} ${t.y}</strong><button type="button" data-mv="1" aria-label="Next month" ${S.mi===11?'disabled':''}>›</button></div>
+ <div class="chips" role="group" aria-label="Choose month">${MS.map((x,i)=>`<button type="button" data-mc="${i}" aria-pressed="${i===S.mi}">${x}</button>`).join('')}</div><div class="mgrid">${g}</div>`;}
+function lowerHtml(s){
+ return `<section id="how"><h2>How It Works <span class="rv">PLACEHOLDER</span></h2><div class="ph-box">LOWER SIGN CONTENT NOT SUPPLIED. The linked SEO worksheet (tab “${esc(s.name)}”) holds only URL / H1 / title / description / H2 / keyword data, no article copy. Approved ${esc(s.name)} article, callouts and “How It Works” text must come from the writers. Nothing is invented here.</div></section>
+ <section id="faq" class="faq"><h2>Q&amp;A <span class="rv">PLACEHOLDER</span></h2><div class="card">${[1,2,3].map(i=>`<details><summary>FAQ question ${i} (placeholder)</summary><p>Placeholder answer ${i}. Approved FAQ copy was not supplied; this only demonstrates expand/collapse with the answer present in the HTML.</p></details>`).join('')}</div></section>`;}
+function othersHtml(cur){const list=SIGNS.filter(x=>x!==cur);
+ return `<section id="signs"><h2>Lucky Days to Gamble for Other Signs</h2><ul class="signs">${list.map(x=>`<li><a href="${url(x)}" data-sign="${x.name}"><span class="gl" style="--gc:${x.theme.base}" aria-hidden="true">${x.glyph}&#xFE0E;</span><span><b>${x.name}</b><small>${rangeTxt(x)}</small></span></a></li>`).join('')}</ul><p><span class="rv">Icon is [TBD] in BFC-56622: zodiac glyph used as placeholder. Card layout [TBD – Figma].</span></p></section>`;}
+function iconUri(letter,col){return 'data:image/svg+xml,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><rect width="48" height="48" rx="12" fill="${col}"/><text x="24" y="31" font-size="22" font-family="sans-serif" font-weight="700" text-anchor="middle" fill="#fff">${letter}</text></svg>`);}
+function toolsHtml(){return `<section id="tools"><h2>Discover Our Simulator Tools</h2><ul class="tools">${D.sims.map(t=>`<li><a href="${t.url}"><img src="${iconUri(t.name[0],'#5b4b8a')}" width="48" height="48" alt="${esc(t.alt)}"><span>${esc(t.name)}</span></a></li>`).join('')}</ul><p><span class="rv">Icons = placeholders (Figma 319:8115 not imported). Order, names, URLs and alt text from BFC-56623.</span></p></section>`;}
+function contribHtml(){return `<section id="contributors"><h2>Page Contributors <span class="rv">PLACEHOLDER</span></h2><div class="ph-box">Contributor names, credentials and photos were not supplied and are not invented.</div></section>`;}
+function footHtml(){return `<footer class="foot"><div class="wrap">Footer: simplified placeholder of the existing Chipy footer. Newsletter form omitted (no network submissions in the mockup).</div></footer>`;}
+function crumbs(s){return `<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="https://chipy.com/" aria-label="Home">⌂</a></li><li><a href="https://chipy.com/tools">Tools</a></li><li aria-current="page">${esc(s.name)} Lucky Days</li></ol></nav>`;}
+
+function renderAll(){const s=BY[S.sign],t=today();
+ document.title=fillYear(s.title,t.y);document.querySelector('meta[name=description]').setAttribute('content',fillYear(s.desc,t.y));
+ document.querySelector('link[rel=canonical]').setAttribute('href','https://chipy.com'+url(s));
+ document.body.style.setProperty('--sign-primary',s.theme.primary);
+ document.getElementById('app').innerHTML=headerHtml()+crumbs(s)+heroHtml(s)+navHtml(s,t.y)+`<main><div class="wrap"><section id="outlook" style="${colorStyle(s)}"></section><section id="calendar" style="${colorStyle(s)}"></section>${lowerHtml(s)}${othersHtml(s)}${toolsHtml()}${contribHtml()}</div></main>`+footHtml();
+ renderSections();renderTool();S.lastKey=tkey();}
+function renderSections(){const s=BY[S.sign];const o=document.getElementById('outlook'),c=document.getElementById('calendar');if(!o)return;
+ o.innerHTML=outlookHtml(s);c.innerHTML=calendarHtml(s);setRoving();
+ const nav=document.querySelector('.ipn a[href="#calendar"]');if(nav)nav.textContent=`${today().y} Calendar`;
+ const h1=document.querySelector('.hero h1');if(h1)h1.textContent=fillYear(s.h1,today().y);
+ document.title=fillYear(s.title,today().y);}
+function tick(){if(tkey()!==S.lastKey){S.lastKey=tkey();renderSections();}}
+setInterval(tick,20000);document.addEventListener('visibilitychange',tick);window.addEventListener('focus',tick);
+
+/* ---------- personal tool ---------- */
+const T={name:'',dob:'',errors:{},req:false,state:'form',pending:false,res:null};
+function resetTool(){Object.assign(T,{name:'',dob:'',errors:{},req:false,state:'form',pending:false,res:null});}
+function fmtDob(v){if(!v)return'';const [y,m,d]=v.split('-');return `${d}/${m}/${y}`;}
+function renderTool(focusKey){const host=document.getElementById('ball-in');if(!host)return;const s=BY[S.sign];
+ if(T.state==='form'){
+  const e=T.errors;
+  host.innerHTML=`<form id="tf" novalidate>
+  <div class="f-row"><label for="fn">Your First Name</label><div class="inp${e.name?' bad':''}"><input id="fn" name="fn" type="text" autocomplete="given-name" placeholder="e.g. John" value="${esc(T.name)}" ${e.name?'aria-invalid="true" aria-describedby="fn-e"':''}>${e.name?'<span class="erric" aria-hidden="true">!</span>':''}</div>${e.name?`<p class="ferr" id="fn-e">${esc(e.name)}</p>`:''}</div>
+  <div class="f-row"><label for="dob">Your Date of Birth</label><div class="inp hasbtn${e.dob?' bad':''}"><input id="dob" type="text" readonly placeholder="dd/mm/yyyy" value="${fmtDob(T.dob)}" aria-haspopup="dialog" ${e.dob?'aria-invalid="true" aria-describedby="dob-e"':''}><button type="button" class="ic" id="dob-btn" aria-label="Open date picker"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button>${e.dob?'<span class="erric" aria-hidden="true">!</span>':''}</div>${e.dob?`<p class="ferr" id="dob-e">${esc(e.dob)}</p>`:''}</div>
+  <button class="cta" type="submit" id="reveal">Reveal My Luck</button>${T.req?'<p class="req-err" role="alert">Something went wrong. Please try again.</p>':''}</form>`;
+ } else if(T.state==='loading'){
+  host.innerHTML=`<div class="loading fade" role="status"><div class="spin" aria-hidden="true"></div><p>Reading your stars…</p></div>`;
+ } else if(T.state==='score'){
+  host.innerHTML=`<div class="res fade" role="status"><span class="lab">Your Luck Score</span><span class="score">${T.res.score.toFixed(2)}<small>/10</small></span></div>`;
+ } else {
+  const r=T.res;host.innerHTML=`<div class="res fade"><span class="lab">Your Luck Score</span><span class="score">${r.score.toFixed(2)}<small>/10</small></span><span class="cat ${r.cls}">${esc(r.category)}</span><p class="msg">${esc(r.message)}</p><button type="button" class="rst" id="reset">Reset</button></div>`;
+  const f=document.getElementById('reset');if(f&&focusKey==='result')f.focus();
+ }
+ if(focusKey&&focusKey!=='result'){const el=document.getElementById(focusKey);if(el)el.focus();}
+ const fl=document.getElementById('mockflag');
+ if(fl){if(T.state==='result'&&T.res.source!=='fixture'){fl.hidden=false;fl.textContent='MOCK RESULT (scenario “'+T.res.category+'”): no verified fixture for this input, not calculated.';}else if(T.state==='result'){fl.hidden=false;fl.textContent='FIXTURE RESULT (documented BFC-52418 regression example).';}else fl.hidden=true;}
+ renderReviewStatus();}
+function validName(v){const t=v.trim();if(!t)return'Please enter a valid name';if(!/^[A-Za-z]+$/.test(t))return'Use A-Z letters only for your first name.';return'';}
+function validDobMain(){return T.dob?'':'Please enter a valid date';}
+document.addEventListener('submit',async ev=>{if(ev.target.id!=='tf')return;ev.preventDefault();if(T.pending)return;
+ T.name=document.getElementById('fn').value;
+ const ne=validName(T.name),de=validDobMain();T.errors={};if(ne)T.errors.name=ne;if(de)T.errors.dob=de;T.req=false;
+ if(ne||de){renderTool(ne?'fn':'dob-btn');return;}
+ T.pending=true;T.state='loading';renderTool();
+ try{const r=await mockService({name:T.name.trim(),dob:T.dob,sign:S.sign});
+  if(T.state!=='loading')return;T.res=r;T.state='score';T.pending=false;renderTool();
+  await sleep(reduced()?400:1000);if(T.state!=='score')return;T.state='result';renderTool('result');
+ }catch(err){if(T.state!=='loading')return;T.pending=false;T.state='form';T.req=true;T.res=null;renderTool('reveal');}
+});
+document.addEventListener('input',ev=>{if(ev.target.id==='fn'){T.name=ev.target.value;if(T.errors.name&&!validName(T.name)){delete T.errors.name;const w=ev.target.closest('.f-row');w.querySelector('.inp').classList.remove('bad');ev.target.removeAttribute('aria-invalid');const e=w.querySelector('.ferr');if(e)e.remove();const ic=w.querySelector('.erric');if(ic)ic.remove();}}});
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));const reduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
+function hashIdx(str){let h=0;for(let i=0;i<str.length;i++)h=(h*31+str.charCodeAt(i))>>>0;return h%10;}
+const CAT={'Low Luck':'cat-low','Some Luck':'cat-some','Good Luck':'cat-good','Jackpot Luck':'cat-jackpot'};
+const SCEN={low:['Low Luck',2.41],some:['Some Luck',4.12],good:['Good Luck',6.23],jackpot:['Jackpot Luck',8.74]};
+async function mockService({name,dob,sign}){
+ await sleep(reduced()?200:900);
+ if(S.fail)throw new Error('mock failure');
+ const key=`${name.toLowerCase()}|${dob}|${tkey()}`;const fx=D.personalFixtures[key];
+ let category,score,idx,source;
+ if(fx){category=fx.category;score=fx.score;idx=fx.messageIndex;source='fixture';}
+ else{const sc=S.scenario==='auto'?'good':S.scenario;[category,score]=SCEN[sc];idx=hashIdx(key);source='mock';}
+ S.last={source,category,score,key};
+ return {category,score,cls:CAT[category],message:D.personal[category][idx],source};}
+document.addEventListener('click',ev=>{
+ const t=ev.target.closest('button,a');if(!t)return;
+ if(t.id==='reset'){resetTool();renderTool('fn');return;}
+ if(t.id==='dob-btn'){openPicker(t);return;}
+});
+document.addEventListener('click',ev=>{if(ev.target.id==='dob'){openPicker(document.getElementById('dob-btn'));}});
+document.addEventListener('keydown',ev=>{if(ev.target.id==='dob'&&(ev.key==='Enter'||ev.key===' ')){ev.preventDefault();openPicker(document.getElementById('dob-btn'));}});
+
+/* ---------- sign switching (preview interception of real links) ---------- */
+function setSign(name){S.sign=name;resetTool();const dp=document.getElementById('dp');if(dp.open)dp.close('switch');S.mi=null;S.last=null;renderAll();renderReview(true);window.scrollTo(0,0);}
+document.addEventListener('click',ev=>{const a=ev.target.closest('a[data-sign],a[data-gosign]');if(!a||ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.button)return;ev.preventDefault();setSign(a.dataset.sign||a.dataset.gosign);});
+
+/* ---------- calendar details / month view ---------- */
+function showTip(btn){const tip=document.getElementById('tip'),w=document.getElementById('calwrap');if(!tip||!btn)return;
+ tip.textContent=btn.getAttribute('aria-label').replace(' (today)','');const b=btn.getBoundingClientRect(),r=w.getBoundingClientRect();
+ let x=b.left-r.left+b.width/2;x=Math.max(70,Math.min(r.width-70,x));tip.style.left=x+'px';tip.style.top=(b.top-r.top-6)+'px';tip.classList.add('on');
+ const live=document.getElementById('cal-live');if(live)live.textContent=tip.textContent;}
+function hideTip(){const t=document.getElementById('tip');if(t)t.classList.remove('on');}
+document.addEventListener('pointerover',ev=>{if(ev.pointerType!=='mouse')return;const c=ev.target.closest('.cell');if(c)showTip(c);});
+document.addEventListener('pointerout',ev=>{if(ev.pointerType==='mouse'&&ev.target.closest('.cell'))hideTip();});
+document.addEventListener('focusin',ev=>{const c=ev.target.closest&&ev.target.closest('.cell');if(c)showTip(c);});
+document.addEventListener('focusout',ev=>{if(ev.target.closest&&ev.target.closest('.cell'))hideTip();});
+document.addEventListener('click',ev=>{const c=ev.target.closest('.cell');if(c){showTip(c);return;}if(!ev.target.closest('#calwrap'))hideTip();
+ const mv=ev.target.closest('[data-mv]'),mc=ev.target.closest('[data-mc]');
+ if(mv||mc){S.mi=mv?Math.max(0,Math.min(11,S.mi+Number(mv.dataset.mv))):Number(mc.dataset.mc);const s=BY[S.sign],t=today();document.getElementById('mv').innerHTML=monthViewHtml(s,t);const k=mv?`[data-mv="${mv.dataset.mv}"]`:`[data-mc="${S.mi}"]`;const f=document.querySelector('#mv '+k)||document.querySelector('#mv [aria-pressed=true]');if(f&&!f.disabled)f.focus();}});
+document.addEventListener('keydown',ev=>{
+ if(ev.key==='Escape')hideTip();
+ const c=ev.target.closest&&ev.target.closest('#yr .cell');if(!c)return;
+ const all=[...document.querySelectorAll('#yr .cell')],i=all.indexOf(c);let n=null;
+ if(ev.key==='ArrowRight')n=all[i+1];else if(ev.key==='ArrowLeft')n=all[i-1];
+ else if(ev.key==='ArrowDown'||ev.key==='ArrowUp'){const row=c.parentElement,col=[...row.querySelectorAll('.cell')].indexOf(c);const rr=ev.key==='ArrowDown'?row.nextElementSibling:row.previousElementSibling;if(rr){const cs=rr.querySelectorAll('.cell');n=cs[Math.min(col,cs.length-1)];}}
+ if(n){ev.preventDefault();all.forEach(x=>x.tabIndex=-1);n.tabIndex=0;n.focus();}});
+document.addEventListener('focusin',ev=>{const c=ev.target.closest&&ev.target.closest('#yr .cell');if(c){document.querySelectorAll('#yr .cell').forEach(x=>x.tabIndex=-1);c.tabIndex=0;}});
+function setRoving(){const y=document.querySelector('#yr .cell.today')||document.querySelector('#yr .cell');if(y)y.tabIndex=0;}
+
+/* ---------- date picker ---------- */
+const P={mode:'cal',A:0,mi:0,sel:'',text:'',err:null,years:false,trigger:null};
+const dp=()=>document.getElementById('dp');
+function signMonths(s){return [s.start[0],s.end[0]];}
+function monthYear(s,A,mi){const ms=signMonths(s);const m=ms[mi];const wrap=s.start[0]>s.end[0];return {m,y:(wrap&&mi===1)?A+1:A};}
+function allowed(s,y,m,d){if(y<MIN_YEAR||d>dim(y,m))return false;if(!inSign(s,m,d))return false;return iso(y,m,d)<=ageCutoff();}
+function validAnchors(s){const out=[];const maxY=today().y;for(let A=MIN_YEAR;A<=maxY;A++){let ok=false;for(let mi=0;mi<2&&!ok;mi++){const {m,y}=monthYear(s,A,mi);for(let d=1;d<=dim(y,m);d++)if(allowed(s,y,m,d)){ok=true;break;}}if(ok)out.push(A);}return out;}
+function anchorOf(s,y,m){return (s.start[0]>s.end[0]&&m===s.end[0])?y-1:y;}
+function openPicker(trigger){const s=BY[S.sign];P.trigger=trigger;P.err=null;P.years=false;P.mode='cal';P.text=fmtDob(T.dob);P.sel=T.dob||'';
+ const va=validAnchors(s);
+ if(T.dob){const [y,m]=T.dob.split('-').map(Number);P.A=anchorOf(s,y,m);P.mi=signMonths(s).indexOf(m);}
+ else{P.A=va[va.length-1];P.mi=0;}
+ renderPicker('ok');dp().showModal();}
+function renderPicker(focusKey){const s=BY[S.sign],el=dp(),va=validAnchors(s);const {m,y}=monthYear(s,P.A,P.mi);
+ let head=`<div class="dp-h"><small id="dp-title">Select date</small><div class="row"><span class="big">${P.sel?headline(P.sel):'Enter date'}</span><button type="button" class="ibtn" data-dp="mode" aria-label="${P.mode==='cal'?'Switch to text input':'Switch to calendar'}">${P.mode==='cal'?'✎':'📅'}</button></div></div>`;
+ let body='';
+ if(P.mode==='cal'){
+  if(P.years){body=`<div class="dp-in"><div class="dp-years" role="group" aria-label="Choose year">${va.slice().reverse().map(a=>{const yy=monthYear(s,a,P.mi).y;return `<button type="button" data-dp="year" data-a="${a}" aria-pressed="${a===P.A}">${yy}</button>`;}).join('')}</div></div>`;}
+  else{const first=new Date(y,m-1,1).getDay();let g=['S','M','T','W','T','F','S'].map(x=>`<div class="wd" aria-hidden="true">${x}</div>`).join('');for(let i=0;i<first;i++)g+='<div></div>';
+   for(let d=1;d<=dim(y,m);d++){const k=iso(y,m,d),ok=allowed(s,y,m,d);g+=`<button type="button" data-dp="day" data-d="${k}" ${ok?'':'disabled'} class="${P.sel===k?'sel':''}${k===tkey()?' td':''}" aria-label="${MONTHS[m-1]} ${d}, ${y}" ${P.sel===k?'aria-pressed="true"':''}>${d}</button>`;}
+   body=`<div class="dp-in"><div class="dp-nav"><button type="button" class="ibtn" data-dp="prev" aria-label="Previous month" ${P.mi===0?'disabled':''}>‹</button><button type="button" class="my" data-dp="years" aria-label="${MONTHS[m-1]} ${y}, choose year">${MONTHS[m-1]} ${y} ▾</button><button type="button" class="ibtn" data-dp="next" aria-label="Next month" ${P.mi===1?'disabled':''}>›</button></div><div class="dp-g">${g}</div></div>`;}
+ } else {
+  body=`<div class="dp-man"><label for="dp-text">Date</label><input id="dp-text" type="text" inputmode="numeric" maxlength="10" placeholder="dd/mm/yyyy" value="${esc(P.text)}" autocomplete="off" ${P.err?'aria-invalid="true" aria-describedby="dp-err"':''}><p class="hint">dd/mm/yyyy</p><div id="dp-err">${errHtml()}</div></div>`;
+ }
+ el.innerHTML=head+body+`<div class="dp-f"><button type="button" data-dp="clear">Clear</button><div class="r"><button type="button" data-dp="cancel">Cancel</button><button type="button" data-dp="ok" id="dp-ok">OK</button></div></div>`;
+ const f=focusKey==='text'?el.querySelector('#dp-text'):focusKey==='ok'?el.querySelector('[data-dp=day].sel')||el.querySelector('[data-dp=day]:not([disabled])')||el.querySelector('#dp-text')||el.querySelector('#dp-ok'):el.querySelector(`[data-dp="${focusKey}"]:not([disabled])`)||el.querySelector('#dp-ok');
+ if(f)f.focus();}
+function headline(k){const [y,m,d]=k.split('-').map(Number);return `${WD[new Date(y,m-1,d).getDay()].slice(0,3)}, ${MS[m-1]} ${d}`;}
+function errHtml(){if(!P.err)return'';if(P.err.type==='sign'){const o=P.err.sign;return `<p class="dp-err" role="alert">This date falls under ${o.name}. Go to the <a href="${url(o)}" data-gosign="${o.name}">${o.name} tool</a>.</p>`;}return `<p class="dp-err" role="alert">${esc(P.err.msg)}</p>`;}
+function parseManual(txt){const m=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec(txt.trim());if(!m)return null;const d=+m[1],mo=+m[2],y=+m[3];if(mo<1||mo>12||y<MIN_YEAR||d<1||d>dim(y,mo))return null;return {y,m:mo,d};}
+document.addEventListener('click',ev=>{const b=ev.target.closest('[data-dp]');if(!b||!dp().contains(b))return;const s=BY[S.sign],a=b.dataset.dp;
+ if(a==='day'){P.sel=b.dataset.d;renderPicker('day');}
+ else if(a==='prev'){P.mi=0;renderPicker('next');}
+ else if(a==='next'){P.mi=1;renderPicker('prev');}
+ else if(a==='years'){P.years=true;renderPicker('year');}
+ else if(a==='year'){P.A=+b.dataset.a;P.years=false;renderPicker('years');}
+ else if(a==='mode'){if(P.mode==='cal'){P.text=P.sel?fmtDob(P.sel):P.text;P.mode='input';P.err=null;renderPicker('text');}else{const pm=parseManual(P.text);if(pm&&allowed(s,pm.y,pm.m,pm.d)){P.sel=iso(pm.y,pm.m,pm.d);P.A=anchorOf(s,pm.y,pm.m);P.mi=signMonths(s).indexOf(pm.m);}P.mode='cal';P.err=null;P.years=false;renderPicker('mode');}}
+ else if(a==='clear'){P.sel='';P.text='';P.err=null;renderPicker(P.mode==='input'?'text':'day');}
+ else if(a==='cancel'){dp().close('cancel');}
+ else if(a==='ok'){applyOk();}
+});
+document.addEventListener('input',ev=>{if(ev.target.id==='dp-text'){P.text=ev.target.value;}});
+document.addEventListener('keydown',ev=>{if(ev.target.id==='dp-text'&&ev.key==='Enter'){ev.preventDefault();applyOk();}});
+function applyOk(){const s=BY[S.sign];
+ if(P.mode==='cal'){T.dob=P.sel;syncDob();dp().close('ok');return;}
+ const txt=document.getElementById('dp-text').value;P.text=txt;
+ if(!txt.trim()){T.dob='';syncDob();dp().close('ok');return;}
+ const pm=parseManual(txt),bad=()=>{P.err={type:'msg',msg:'Please enter a valid date'};P.sel='';renderPicker('text');};
+ if(!pm)return bad();
+ const k=iso(pm.y,pm.m,pm.d);
+ if(k>tkey())return bad();           /* future */
+ if(k>ageCutoff())return bad();      /* under minimum age */
+ if(!inSign(s,pm.m,pm.d)){P.err={type:'sign',sign:signOf(pm.m,pm.d)};renderPicker('text');return;}
+ P.sel=k;T.dob=k;syncDob();dp().close('ok');}
+function syncDob(){const dEl=document.getElementById('dob');if(!dEl)return;dEl.value=fmtDob(T.dob);const w=dEl.closest('.f-row');if(T.dob){delete T.errors.dob;w.querySelector('.inp').classList.remove('bad');dEl.removeAttribute('aria-invalid');const e=w.querySelector('.ferr');if(e)e.remove();const ic=w.querySelector('.erric');if(ic)ic.remove();}}
+dp().addEventListener('close',()=>{syncDob();const tr=document.getElementById('dob-btn');if(tr&&dp().returnValue!=='switch')tr.focus();dp().returnValue='';});
+
+/* ---------- review panel (outside product) ---------- */
+function renderReview(force){const r=document.getElementById('review');if(!force&&r.dataset.ready)return;r.dataset.ready='1';const open=r.querySelector('details')&&r.querySelector('details').open;
+ r.innerHTML=`<details${open?' open':''}><summary>Review controls (mock, not product)</summary><div class="body">
+ <label>Sign preview<select id="rv-sign">${SIGNS.map(x=>`<option${x.name===S.sign?' selected':''}>${x.name}</option>`).join('')}</select></label>
+ <label>Local-date override (fixtures: ${D.years.join(', ')})<input type="date" id="rv-date" value="${S.override||''}"></label><button type="button" id="rv-date-clear">Use real local date</button>
+ <label>Personal result scenario (mock)<select id="rv-scen">${['auto','low','some','good','jackpot'].map(x=>`<option value="${x}"${S.scenario===x?' selected':''}>${x==='auto'?'Auto: fixture if exists, else Good (mock)':x}</option>`).join('')}</select></label>
+ <label><span><input type="checkbox" id="rv-fail"${S.fail?' checked':''}> Simulate request failure</span></label>
+ <label><span><input type="checkbox" id="rv-lab"${S.labels?' checked':''}> Show review/placeholder labels</span></label>
+ <div class="st" id="rv-status"></div>
+ <div class="st"><b>Fixture note:</b> the only documented personal fixture is Capricorn · Marius · 08/01/1986 with date override 2025-01-24 (Good Luck, 5.07/10). Sign-level fixtures exist for ${D.years.join(', ')}; other years show a notice. All other personal results are labelled mock scenarios.</div>
+ <div class="st"><b>Unresolved (TBD – Figma):</b> Cancer light palette; Leo/Sagittarius/Aquarius/Pisces Quiet; mobile month view look; date-detail look; tablet 768/600 lower sections; picker visuals; category/sign contrast. See output/review-notes.md.</div></div></details>`;
+ renderReviewStatus();}
+function renderReviewStatus(){const e=document.getElementById('rv-status');if(!e)return;e.innerHTML=S.last?`Last result source: <b>${S.last.source==='fixture'?'verified fixture':'MOCK scenario (not calculated)'}</b> · ${esc(S.last.category)} · ${S.last.score.toFixed(2)}/10`:'No personal result yet.';}
+document.addEventListener('change',ev=>{const id=ev.target.id;
+ if(id==='rv-sign')setSign(ev.target.value);
+ else if(id==='rv-date'){S.override=ev.target.value||null;S.mi=null;renderAll();}
+ else if(id==='rv-scen')S.scenario=ev.target.value;
+ else if(id==='rv-fail')S.fail=ev.target.checked;
+ else if(id==='rv-lab'){S.labels=ev.target.checked;document.body.classList.toggle('nolabels',!S.labels);}});
+document.addEventListener('click',ev=>{if(ev.target.id==='rv-date-clear'){S.override=null;S.mi=null;renderAll();renderReview(true);}});
+
+/* ---------- boot ---------- */
+const params=new URLSearchParams(location.search);
+if(window.__BUILD_FIXED__){S.override=window.__BUILD_FIXED__;}
+renderAll();renderReview(true);setRoving();
+document.addEventListener('focusin',()=>{});
+window.__mock={setSign,get state(){return {sign:S.sign,tool:T.state};}};
+})();
+</script>
+</body>
+</html>

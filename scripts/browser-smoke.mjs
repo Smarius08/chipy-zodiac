@@ -6,7 +6,7 @@ const {chromium}=await import('playwright');
 const file=path.resolve(process.argv[2]||'output/zodiac-lucky-day-full-mockup.html');
 if(!fs.existsSync(file)){console.error('NO MOCKUP TO TEST: build '+file+' first. No product checks have passed.');process.exit(2);}
 fs.mkdirSync('output/qa',{recursive:true});
-const browser=await chromium.launch({headless:true});const failures=[];
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH,args:['--no-sandbox']}:{})});const failures=[];
 try{
   for(const width of [1920,768,600,360,320]){
     const page=await browser.newPage({viewport:{width,height:1000}});
