@@ -1,0 +1,326 @@
+ZODIAC LUCKY DAY — FULL HTML MOCKUP BUILD PROMPT
+Prepared 9 November 2026. Paste this entire brief into the implementation LLM and attach both source HTML files plus lucky_day_project_handoff.zip.
+
+ROLE AND OUTCOME
+Act as a senior product designer and front-end engineer. Build a complete, reviewable HTML mockup of Chipy’s 12 Zodiac Lucky Days to Gamble pages. Deliver the working page, not only a plan or code excerpt.
+
+Combine the structure and reusable content of zodiac-sign-pages-wireframe(1).html with the exact 48 supporting messages in zodiac-strength-copy-review(2).html. Recreate the selected Figma direction faithfully, replace outdated artwork with the new zodiac banners, and wire the page interactions to the current requirements.
+
+Deliver one self-contained file named zodiac-lucky-day-full-mockup.html, opening locally without a build step. Inline CSS, JavaScript, approved data fixtures and embedded assets. Do not depend on temporary Figma URLs. Use real HTML inputs, labels, buttons, links and text; do not turn screenshots of forms into the interface.
+
+This is an interactive review mockup, not a production backend implementation. Do not publish, edit Jira, modify Figma, or claim to implement sitewide integrations. Continue with confirmed work; isolate unresolved portions and report exact conflicts. Do not invent requirements to make the preview appear complete.
+
+1. READ AND RECONCILE SOURCES BEFORE BUILDING
+Read both attached HTML files, their markup, scripts, embedded data and image assets. Read the project Markdown files inside lucky_day_project_handoff.zip:
+- 02_CURRENT_JIRA_SPECS.md: requirements and ownership.
+- 03_CALCULATION_MODEL.md: personal calculation and Reference Data.
+- 04_UI_UX_AND_STATES.md: shared states and responsive rules.
+- 06_ZODIAC_EXPANSION.md: expansion context.
+- 07_OPEN_ITEMS_AND_QA.md: QA and gaps.
+- 01_PROJECT_HANDOFF.md: overall context.
+- 05_DECISION_HISTORY.md: historical context only.
+README explains the structure; it is not the detailed specification.
+
+Read current Jira:
+https://gtmarketing.atlassian.net/browse/BFC-56615
+Its description delegates detailed requirements to its subtasks. Read:
+BFC-56617 SEO content; BFC-56618 common sections; BFC-56619 tool layout; BFC-56620 tool functionality; BFC-56633 strength/calendar layout; BFC-56621 sign-level data; BFC-56885 strength/calendar functionality and approved messages; BFC-56622 Other Signs; BFC-56623 simulator tools.
+Also read BFC-52416 and BFC-52417 for inherited tool behavior and the 40 personal Daily Luck Reading Messages; BFC-52418 for calculation verification if needed.
+
+Use the authoritative source for each domain. Prefer the latest explicitly agreed requirement over historical text. The attached October handoff and wireframe predate the November sign-page requirements. Apply the confirmed resolutions in section 2; do not revive old TBDs that current Jira already resolves.
+Figma controls visual presentation only. It cannot override validation, calculation, copy, reference values, backend ownership or functionality.
+Use project chats only to recover specific missing decisions; do not treat an assistant’s earlier suggestion as approval.
+If a material contradiction remains unresolved, quote both sources verbatim, link them, state the affected behavior and ask the user for that decision. Continue independent confirmed work.
+
+Use canonical terminology:
+Date Number Total; Date Numerology Number; Luck Score; Annual Rank; Annual Luck Position; Final Luck Category; Final Luck Score; Reference Data; Four Scoring Rules.
+Never conflate personal Final Luck Categories with sign-level Quiet / Mixed / Strong / Strongest.
+
+2. VERIFIED CORRECTIONS TO THE UPLOADED SOURCES
+These are already resolved; do not ask the user to approve them again:
+A. The wireframe says “any birth date is accepted” and switches the info strip after another sign’s DOB. Superseded by BFC-56620: another sign’s date is rejected inside the picker’s manual input mode, with a same-tab link. There must be no cross-sign result.
+B. The wireframe says “from the average result of all 81 name and life-path combinations.” Superseded by adopted formula v1.0 in BFC-56621. Discard its outlook arrays, numeric band thresholds and averaging model.
+C. The wireframe embeds ENGINE.personal and browser scoring/ranking code. Do not ship this calculation code in the new HTML. Production calculations belong to the shared PHP backend. Use the fixture approach in section 7.
+D. The copy-review header says “These messages are drafts for review”. BFC-56885 explicitly labels them “Supporting messages (approved, 5 November 2026)”. All 48 original messages in the attached file were mechanically checked against Jira and match exactly. Preserve them verbatim; remove editorial textareas, draft labels and copy-review controls from the product page. Its internal totals are not public content.
+E. The wireframe’s dark sign panels, glow, numeric-looking intensity logic, native date input, shared error line and placeholder heading bars are not the current specification.
+F. Figma’s “Today’s Outlook” H2, “2026 Calendar” H2, “Next 5”, sample dates, levels, counts and old personal-score explanation are placeholders. Use current Jira headings and exact supporting messages.
+G. The first design’s four November cards are not real data. In alternative frame 9099, “November 10 / Thursday” is inconsistent with the equivalent “November 19 / Thursday” card. Derive all dates/weekdays from verified data instead of copying either mockup.
+H. Age is resolved: minimum 18, as specified in current BFC-52417 and BFC-56620. The archived minimum-age TBD is stale.
+I. URLs and sign restriction are resolved in current Jira; the archive’s expansion questions about these are stale.
+J. Simulator cards shown in Figma are placeholders where they differ from BFC-56623. Use the required simulator section, not a four-card blackjack-only selection.
+
+3. SELECTED VISUAL DIRECTION
+Figma file:
+https://www.figma.com/design/mRGsMU76MmiKMnzQkwYKgG/Tools---Calculators
+
+Use:
+- Overall first design: node 14463:7805.
+  https://www.figma.com/design/mRGsMU76MmiKMnzQkwYKgG/Tools---Calculators?node-id=14463-7805
+- Wide, open Today’s Outlook layout: node 14463:7879.
+  https://www.figma.com/design/mRGsMU76MmiKMnzQkwYKgG/Tools---Calculators?node-id=14463-7879
+- Compact horizontal Other Signs cards: node 14463:8329.
+  https://www.figma.com/design/mRGsMU76MmiKMnzQkwYKgG/Tools---Calculators?node-id=14463-8329
+
+Comparison-only, not the selected direction:
+overall 14463:9025; outlook 14463:9099; tall sign cards 14463:9555.
+Exclude vertical symbol/category panel 14463:9100, which the user explicitly dislikes.
+
+Preserve the atmospheric dark hero and light content below it. Keep useful information prominent, decoration secondary, and the ball centered at the appropriate viewport. Match Figma spacing, typography, content width and relative proportions; do not redesign the page into a generic dashboard.
+
+Refinements proposed in the design review:
+- Make the filled level badge more balanced relative to its explanation.
+- Improve grouping without adding a tall decorative sidebar.
+- Keep Other Signs compact; subtle shadows and lighter icon treatment can be explored.
+Treat these as proposed visual refinements within the selected direction, not approved changes to product rules. Document visible deviations from Figma. Do not silently shrink the badge or substitute an icon style and call it exact Figma reproduction.
+
+Follow BFC-56633’s current readability rules: badge text #333333 except Scorpio Strong and Strongest, which use white. Do not use pale sign-primary text on the light page. The review measured Aries primary #FF713D at approximately 2.73:1 on white; retaining white text on its filled badge would preserve a known problem.
+
+4. NEW BANNERS — INSPECT AND MAP ALL 12
+Banner collection:
+https://www.figma.com/design/mRGsMU76MmiKMnzQkwYKgG/Tools---Calculators?node-id=14463-3570
+
+Inspect screenshots AND actual assets/layers for desktop, 768px, 600px and 360px. Export real decorative assets where possible. Do not reuse the old embedded concept tiles just because they are convenient.
+Do not rasterize functional controls or overlay invisible hotspots over painted input fields. Keep artwork separate from accessible live form/result content. Avoid duplicate painted/live labels, values and disclaimers.
+
+Known frame mapping, verified from desktop artwork and info strips:
+Sign | Desktop | Tablet 768 | Tablet 600 | Mobile 360
+Aries | 14463:3571 | 14463:3631 | 14463:3877 | 14463:3815
+Taurus | 14463:3693 | 14463:3753 | 14463:4002 | 14463:3940
+Gemini | 14508:14555 | 14508:16052 | 14508:16066 | 14508:16059
+Cancer | 14512:16421 | 14512:16429 | 14512:16443 | 14512:16436
+Leo | 14517:17083 | 14517:17091 | 14517:17105 | 14517:17098
+Virgo | 14518:17722 | 14518:17730 | 14518:17744 | 14518:17737
+Libra | 14521:18365 | 14521:18373 | 14521:18387 | 14521:18380
+Scorpio | 14530:16739 | 14530:16747 | 14530:16761 | 14530:16754
+Sagittarius | 14531:17386 | 14531:17394 | 14531:17408 | 14531:17401
+Capricorn | 14532:18029 | 14532:18037 | 14532:18051 | 14532:18044
+Aquarius | 14534:18375 | 14534:18383 | 14534:18397 | 14534:18390
+Pisces | 14534:18721 | 14534:18729 | 14534:18743 | 14534:18736
+
+Figma’s Sagittarius, Capricorn, Aquarius and Pisces frame names incorrectly repeat “Scorpio”. Identify them by node ID and actual artwork, not the duplicated name.
+Desktop names include “960x638px”, but inspected frame dimensions are 1920 × 638. Use actual dimensions.
+Aries mobile/tablet art includes wrong placeholder info-strip text such as “Dec 2 - Jan 19”, “Thursday, Saturday” and “7, 16, 25, 34, 43, 53”. Correct values are Aries / Mar 21–Apr 19 / Tuesday / 1, 8, 17. Render live reference values from Jira for every sign.
+
+The banners establish hero composition, not the unresolved colours of the light calendar. Cancer’s readable dark hero does not resolve its light-calendar palette.
+All 12 desktop banners and a responsive sample were reviewed during brief preparation. Your build must still inspect and verify all four viewport variants for all signs.
+If source artwork cannot be extracted without baked-in UI, report the affected asset and limitation. Do not pass the old screenshot-overlay technique off as a completed recreation.
+
+5. PAGE STRUCTURE AND CONNECTED CONTENT
+Build a complete page in this order:
+1. Existing Chipy header/navigation and breadcrumbs.
+2. Sign-specific H1 only in the upper section, per BFC-56617.
+3. New sign-themed tool hero; form/state UI inside the ball; info strip; disclaimer.
+4. In-page navigation.
+5. Lucky Strength Level / Today’s Outlook.
+6. Current-year Calendar.
+7. Lower sign content, How It Works and FAQ.
+8. Lucky Days to Gamble for Other Signs.
+9. Discover Our Simulator Tools.
+10. Page Contributors.
+Retain surrounding footer where supported by the existing page design.
+
+Use BFC-56617’s exact per-sign H1, title, meta description, section H2s, URL and self-referencing canonical, with the dynamic year applied where specified. Do not use screenshot headings in place of these.
+SEO content source linked by Jira:
+https://docs.google.com/spreadsheets/d/1VRkJA9EuBcM3HydD8UXM0by2TxpfN7fJiy3YIEAC8QE/edit?gid=7001#gid=7001
+Inspect it for actual lower-page copy if accessible. If Jira and the sheet disagree without a documented resolution, quote both before changing wording. If source content cannot be retrieved, explicitly mark missing copy in the review notes; do not fabricate approved articles, FAQ answers, authors or credentials.
+
+Breadcrumb: Home > Tools > [Sign] Lucky Days.
+Provide in-page links to the tool, outlook, year calendar, How It Works, Q&A, Other Signs and Other Tools.
+BFC-56618 calls the outlook nav item “Lucky Strength Level”; the section-specific BFC-56633 says 'In-page nav label: "Today’s Outlook"'. Prefer the section-specific instruction for the mockup and record the wording discrepancy for documentation reconciliation; do not alter functionality.
+
+Other Signs:
+- Exactly 11, omitting the current sign, in zodiac order Aries through Pisces.
+- Compact selected Figma card layout: sign name, date range and icon.
+- Whole card is a real anchor to /tools/[sign]-lucky-days-to-gamble.
+- Preserve genuine destination URLs in markup. The local mockup may intercept ordinary clicks to switch the preview, updating the displayed sign, artwork, headings, reference strip, messages, calendar, related signs and metadata together. Do not invent a production route based on a preview hash.
+- Sign switching must not carry personal details across pages; same-tab mismatch navigation requires re-entry.
+- Initial page content and link markup must exist in the saved HTML, not be empty containers waiting for JS.
+
+Simulator section:
+H2 “Discover Our Simulator Tools”.
+First card: Lucky Day to Gamble; URL /tools/is-today-my-lucky-day-to-gamble; alt “Lucky day to gamble icon”.
+Follow with the exact simulator cards, order, URLs and alt text in BFC-56623. Do not replace them with unrelated blackjack tools.
+Icons: Figma node 319:8115.
+FAQs should expand/collapse and keep answers in HTML. In-page links must scroll to real sections.
+
+Read BFC-56624–BFC-56628 for wider integration context if needed. Changes to other live pages, search, tools index and HTML/XML sitemaps are outside this one-page mockup: report them as production integration work, not completed mockup features.
+
+6. PERSONAL TOOL — REQUIRED STATES AND DATE PICKER
+One shared UI/state implementation across signs:
+Initial Form → Validate → Loading/Transition → Score Reveal → Final Result.
+Request failure → Form with preserved inputs and request error.
+Reset → original empty form, without reload.
+
+Initial:
+- First Name, Date of Birth and active “Reveal My Luck”.
+- No initial errors.
+- Info strip is filled with the page’s sign, Lucky Day(s) and Lucky Numbers on initial HTML load.
+- Both invalid fields show their own errors simultaneously after submit.
+- Empty name: “Please enter a valid name”
+- Unsupported name: “Use A-Z letters only for your first name.”
+- Empty/invalid DOB: “Please enter a valid date”
+- A–Z-only first name; no new normalization or international-input behavior.
+- No submission while invalid; prevent duplicate pending submissions.
+
+Sign-specific Material Design 3 modal DOB picker:
+- Calendar and manual input modes, with pencil/calendar switching.
+- Calendar permits only that sign’s date range in allowed years. Disable all other dates.
+- Month arrows navigate only the sign’s months.
+- Capricorn crosses December and the following January. Do not mishandle the year transition.
+- Year selection includes all years permitted by the age rule. Open at the sign’s first month in the latest age-allowed year; do not enable underage days within it.
+- No future dates; minimum age 18, evaluated against the local date.
+- Pisces Feb 29 is selectable in leap years.
+- Manual input uses dd/mm/yyyy and allows typing any date.
+- On OK, validate real Gregorian date, future restriction and age FIRST.
+- Only if those pass, reject a DOB outside the page’s sign. Keep picker open. Show under its manual input:
+  “This date falls under [Sign]. Go to the [Sign] tool.”
+- Only “[Sign] tool” is linked, to /tools/[sign]-lucky-days-to-gamble, in the same tab.
+- No carry-over of name or DOB to the destination.
+- Example: Aries page + 01/08/1990 → “This date falls under Leo. Go to the Leo tool.”
+- This mismatch error belongs only inside manual picker mode, never under the main form DOB field.
+- Clear, Cancel and OK work correctly; Cancel does not apply an unconfirmed change.
+A native date input alone does not reproduce these required interactions.
+
+Request failure:
+- Stop loading, restore form, preserve valid inputs.
+- Below CTA: “Something went wrong. Please try again.”
+- Retry via Reveal My Luck; no extra Retry button; no stale previous result.
+
+Result:
+- Final Luck Score with /10, Final Luck Category, matching personal Daily Luck Reading Message, Reset, info strip and disclaimer.
+- Keep category treatments independent of the selected sign: Low red/burgundy; Some purple/magenta; Good blue; Jackpot teal/cyan.
+- Use actual Figma category assets/colours where provided.
+- Use BFC-52417’s 40 approved PERSONAL messages, ten per category; these are not the 48 sign messages.
+- Same user/date receives the same personal message via a deterministic backend response/fixture, never fresh randomness.
+- Reset clears all input, result, error and pending state and restores the selected sign’s initial theme/strip without reload.
+- Full message remains inside the ball without overlapping artwork or Reset at desktop, 768, 600 and mobile.
+
+Disclaimer, exact:
+“For entertainment purposes only. Your luck score does not predict gambling outcomes or change the mathematical odds of any game.”
+
+7. DATA BOUNDARY AND HONEST OFFLINE MOCKING
+Production: all scoring/calculation stays in the shared PHP backend. One engine, with personal and sign-level paths, not 12 engines. Never put scoring, annual ranking or averaging functions into the browser.
+
+For this standalone mockup:
+- Generate sign/year fixture data during build using Python or another non-browser script implementing BFC-56621 exactly. Validate it before embedding it.
+- Embed dates, level names and annual day counts only. No component scores or totals in delivered browser data/code.
+- JS may look up a date, select upcoming records, change visible month and render supplied levels. It must not score, rank, average or calculate levels.
+- Include verified current-year and next-year datasets so a local New Year transition can be reviewed, plus a leap-year fixture if used for QA. Document actual fixture coverage; never silently display another year’s data.
+- Pre-render the initial sign’s content into HTML. Standalone fixture lookup simulates server-supplied data; it does not implement SSR/PHP.
+- For personal results, use documented input/date-specific fixtures or clearly labelled review scenarios through a mock asynchronous service adapter. Never return an arbitrary fixed score for every valid name/DOB and imply it was calculated.
+- Keep review-only controls in a collapsible panel outside the simulated product: sign switcher, local-date override, category/result scenario and request-failure simulation. Label scenario data as mock data.
+- If an arbitrary valid input has no verified fixture, report the fixture limitation clearly in review mode rather than faking accuracy. A real backend endpoint and transport details remain integration work; do not invent them.
+- Generate personal fixtures offline from the authoritative shared model where practical. The model’s documented regression example is Capricorn / Marius / 08 Jan 1986 / 24 Jan 2025: Luck Score 5; Annual Rank 179/365; Annual Luck Position 51.10%; Good Luck; Final Luck Score 5.07/10. Use the date override when demonstrating it; never present it as today’s result.
+
+Sign-only fixture rule, BUILD TIME ONLY:
+Use the page sign and calendar date. Use the existing Lucky Day Score (0–3) and Lucky Number Score (0–2) rules and Reference Data as specified in BFC-56621. Total 0–1 = Quiet; 2 = Mixed; 3–4 = Strong; 5 = Strongest.
+No personal inputs, 81-combination simulation, annual ranking, tie-breaks, forced distributions or averaging.
+Use exact-number priority, circular weekday distance, nearest of two lucky weekdays, straight numerical distance and non-stacking duplicate matches from the task.
+
+2026 annual counts, in order Quiet / Mixed / Strong / Strongest:
+Aries 126 / 110 / 120 / 9
+Taurus 0 / 30 / 293 / 42
+Gemini 127 / 100 / 125 / 13
+Cancer 13 / 65 / 252 / 35
+Leo 139 / 108 / 107 / 11
+Virgo 137 / 104 / 112 / 12
+Libra 123 / 110 / 123 / 9
+Scorpio 70 / 100 / 169 / 26
+Sagittarius 91 / 111 / 147 / 16
+Capricorn 119 / 94 / 139 / 13
+Aquarius 79 / 106 / 165 / 15
+Pisces 81 / 101 / 167 / 16
+These are verification outputs, not target quotas. Taurus having zero Quiet dates does not require extra copy.
+
+8. OUTLOOK AND CALENDAR
+Both sign sections:
+- Light page background #F9FAFA; no dark panel/glow.
+- Names, dates, weekdays, counts and approved supporting messages only. Never expose totals or /10.
+- Remain independent of personal form/result/reset.
+- Today means visitor-local calendar date, including around UTC boundaries.
+- Badge and calendar agree for the same sign/date.
+- On local date rollover update badge, fixed supporting message, upcoming dates and Today outline. On local 1 January switch both sections and legend to the new year.
+- Use one fixed message per sign + level from the attached copy-review DATA texts, ordered Quiet, Mixed, Strong, Strongest; keep wording verbatim. Do not use its editorial UI or dark styling.
+
+Outlook:
+- Per-sign H2 from BFC-56617.
+- Filled V1 pill left, text right on desktop, then cards label and date row.
+- Date line: “[Sign] Day Outlook for [Weekday], [Month] [D], [YYYY]”.
+- Supporting message below, replacing the old generic explanation.
+- Cards label: “Next Strongest Days for [Sign] in [Year]”; no hardcoded “5”.
+- At most five Strongest dates strictly AFTER today, chronological, same year only.
+- Do not fill with Strong dates or next year.
+- Display-only date cards, no link/hover-button styling.
+- 1–4 cards retain normal card width and align left.
+- None: “No Strongest dates remain this year.”
+- Mobile order: badge, text, label, two-column card grid; five cards arrange 2/2/1.
+- Aries 5 Nov 2026: 15 Dec and 22 Dec, both Tuesday, only two cards.
+- Aries 30 Dec 2026: none.
+- Aries 1 Jan 2026: 6 Jan, 24 Mar, 31 Mar, 14 Apr, 21 Apr.
+
+Calendar:
+- Desktop: 12 rows Jan–Dec, up to 31 cells each, actual dates only. No level assigned to nonexistent dates.
+- Use BFC-56633/Figma proportions: about 24 × 22px desktop cells, rounded corners, dark Today outline.
+- Legend shows Quiet / Mixed / Strong / Strongest with whole-year counts, then Today. Sum 365 or 366.
+- Date details on hover-capable devices and tap on touch: date + level only. Make equivalent information available to keyboard users.
+- Mobile: one month at a time, opens on current local month; working previous/next arrows and month chips.
+- Month navigation changes presentation, not levels or whole-year legend counts.
+- Tap targets at least 44 × 44px including spacing, per current Jira.
+- Do not shrink a 31-column desktop calendar into an unreadable mobile year grid.
+
+Colours:
+Use the exact per-sign four-colour table in BFC-56633. Existing approved rule mixes primary with white at Quiet 20%, Mixed 40%, Strong 80%, Strongest 100%. Date cards use Quiet.
+Do not reuse the wireframe’s alpha values against dark panels or its vis() lightening helper.
+Keep unresolved palettes marked as unresolved; do not silently derive a supposedly final Cancer palette.
+
+9. KNOWN UNRESOLVED ITEMS — PRESERVE AND REPORT
+Recheck current Figma/Jira; some may have been resolved since this brief. If resolved, cite the exact new source and implement it. Otherwise keep them in the review register:
+- BFC-56633: “Cancer needs its own darker set of four colours: [TBD – Figma].”
+- BFC-56633 on Leo, Sagittarius, Aquarius and Pisces Quiet cells: “Design to confirm these four or supply darker values: [TBD – Figma].”
+- BFC-56633 mobile calendar: “The month view is needed in Figma: [TBD – Figma].” The month-view FUNCTIONALITY is already required; its exact visual design is not supplied by the tiny full-year mobile heatmap.
+- BFC-56633: “Look and position: [TBD – Figma]” for date details.
+- Tablet 768/600 layouts for the two lower sign sections, lower-level badge appearance, 1–4 cards/no-card appearance, and exact picker Figma are incomplete in the reviewed Jira. Banner viewport frames do not resolve lower-section layouts.
+- BFC-56619: category/sign contrast adjustments are “[TBD – Figma]”, including Low on Scorpio, Jackpot on Sagittarius/Aquarius and Good on Aquarius.
+- Missing/unretrieved lower copy and contributor data must not become invented approved content.
+
+For visual gaps, a minimally necessary review treatment may be shown only if clearly listed as a PROPOSAL in the separate review notes. State what it affects and what needs designer/product review. Do not relabel a proposal as a current requirement.
+For an unresolved calculation/validation/backend requirement, do not invent a temporary rule.
+The existing user request authorizes building the review mockup; historical “contact Marius before development” notes are not a reason to stop before doing this work.
+
+10. IMPLEMENTATION QUALITY AND VERIFICATION
+Use one sign configuration model and shared components. No 12 copied pages or disconnected data lists.
+Maintain clean initial markup, semantic headings, labelled inputs, real anchors, keyboard operation, visible focus and an accessible modal with focus restored to its trigger.
+Use responsive composition rather than scaling down the desktop screenshot. Preserve artwork identity and centered ball; keep all zodiac art visible and avoid text behind it.
+Inspect supplied banner frames at desktop, 768, 600, 360. Test also at 320px for overflow; do not present an invented breakpoint as an approved product requirement.
+Respect reduced motion. Use supplied motion where available; if exact motion is missing, describe any simulated transition as a proposal.
+No console errors, missing assets, clipped messages, stale sign content or controls that look functional but do nothing.
+Do not add real network form submissions to unrelated header/newsletter controls.
+
+Before final delivery:
+- Verify all 12 sign mappings, correct info-strip values, per-sign headings and 11 other-sign links.
+- Compare screenshots against the selected Figma frames at desktop and responsive sizes.
+- Verify all 48 messages remain exact and match sign + level.
+- Verify all 2026 counts above, 365/366 records, valid dates and leap-year behavior.
+- Verify badge/calendar agreement and all upcoming-card edge cases; today excluded, no next-year filler.
+- Verify local date and year rollover, including returning to the page after midnight.
+- Verify month controls, hover/tap/keyboard details and whole-year legend stability.
+- Verify empty and unsupported inputs, simultaneous field errors, minimum-age boundary, invalid Gregorian dates, cross-sign manual input after date/age checks, same-tab link and re-entry.
+- Verify Capricorn year-crossing DOB navigation and Pisces leap-day DOB.
+- Verify pending submission lock, request failure preservation, retry and full reset.
+- Verify all four personal category states and longest approved personal/supporting messages. Check Sagittarius’s long heading/date line and signs with two lucky days or long number lists.
+- Inspect delivered HTML/JS to confirm no old ENGINE, 81-combination arrays, scoring/ranking formulas or hidden component totals remain.
+Only report checks actually run. Distinguish verified behavior, mock-only behavior and untested integration.
+
+11. FINAL DELIVERABLES
+1. zodiac-lucky-day-full-mockup.html — complete interactive offline preview.
+2. A short review note covering:
+   - current requirements implemented;
+   - source conflicts resolved and why;
+   - unresolved items with exact quotes and links;
+   - proposed visual treatments and affected Jira tasks/files;
+   - fixture limitations and real backend/site integration still required;
+   - actual visual/functional checks performed.
+Give the user a direct download link. Explain the review controls briefly. Do not claim the product is production-ready or that missing designs have been approved.
+
+Execute the work through rendering and verification. Do not stop after outlining an approach.
+

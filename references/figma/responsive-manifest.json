@@ -1,0 +1,440 @@
+{
+  "fileKey": "mRGsMU76MmiKMnzQkwYKgG",
+  "retrieved": "2026-11-09",
+  "nodes": {
+    "14463:3631": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14463:3877": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14463:3815": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14463:3753": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14463:4002": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14463:3940": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14508:16052": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14508:16066": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14508:16059": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14512:16429": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14512:16443": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14512:16436": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14517:17091": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14517:17105": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14517:17098": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14518:17730": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14518:17744": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14518:17737": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14521:18373": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14521:18387": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14521:18380": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14530:16747": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14530:16761": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14530:16754": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14531:17394": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14531:17408": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14531:17401": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14532:18037": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14532:18051": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14532:18044": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18383": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18397": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18390": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18729": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18743": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    },
+    "14534:18736": {
+      "rawImagesTruncated": false,
+      "svgAssetsTruncated": false
+    }
+  },
+  "assets": [
+    {
+      "nodeId": "14463:3631",
+      "kind": "export",
+      "index": 0,
+      "sha256": "bea0c2be7194ed28cec2ed2cd362a885da6142774b6d666bed2edac38c99c93f",
+      "bytes": 1041396,
+      "path": "assets/figma/bea0c2be7194ed28cec2ed2cd362a885da6142774b6d666bed2edac38c99c93f.png"
+    },
+    {
+      "nodeId": "14463:3877",
+      "kind": "export",
+      "index": 0,
+      "sha256": "5e9bdf9e1f15e02c7475a7226ff8982758cbb1a021c622db9a818e13fa9e9d0d",
+      "bytes": 574570,
+      "path": "assets/figma/5e9bdf9e1f15e02c7475a7226ff8982758cbb1a021c622db9a818e13fa9e9d0d.png"
+    },
+    {
+      "nodeId": "14463:3815",
+      "kind": "export",
+      "index": 0,
+      "sha256": "a77358c1affbccad059e7a15f3ee516b5ade75afd053294ceff2d9b654f3678f",
+      "bytes": 383783,
+      "path": "assets/figma/a77358c1affbccad059e7a15f3ee516b5ade75afd053294ceff2d9b654f3678f.png"
+    },
+    {
+      "nodeId": "14463:3753",
+      "kind": "export",
+      "index": 0,
+      "sha256": "01e294bfc24ed1554f1fe4161b49f866725817cddc90051cd3a44b043bea7b12",
+      "bytes": 931630,
+      "path": "assets/figma/01e294bfc24ed1554f1fe4161b49f866725817cddc90051cd3a44b043bea7b12.png"
+    },
+    {
+      "nodeId": "14463:4002",
+      "kind": "export",
+      "index": 0,
+      "sha256": "a4987fe3a10ef600f9dec8d0d4f67be2cc39dbafe507036908b0935ccebd8cbc",
+      "bytes": 524306,
+      "path": "assets/figma/a4987fe3a10ef600f9dec8d0d4f67be2cc39dbafe507036908b0935ccebd8cbc.png"
+    },
+    {
+      "nodeId": "14463:3940",
+      "kind": "export",
+      "index": 0,
+      "sha256": "d569e4cbdc0b2ab64ec0a2c58fce86a67b1cdb38017fe965d16a0d60d5a40216",
+      "bytes": 365573,
+      "path": "assets/figma/d569e4cbdc0b2ab64ec0a2c58fce86a67b1cdb38017fe965d16a0d60d5a40216.png"
+    },
+    {
+      "nodeId": "14508:16052",
+      "kind": "export",
+      "index": 0,
+      "sha256": "a58ce17912e07b9bffd432b6110cb80ac938ad85eb16a5a3f8203240829c83de",
+      "bytes": 914252,
+      "path": "assets/figma/a58ce17912e07b9bffd432b6110cb80ac938ad85eb16a5a3f8203240829c83de.png"
+    },
+    {
+      "nodeId": "14508:16066",
+      "kind": "export",
+      "index": 0,
+      "sha256": "f9142bfa989232158cf1e476081eee333d16e720d61ae5883e794256be4605bb",
+      "bytes": 612209,
+      "path": "assets/figma/f9142bfa989232158cf1e476081eee333d16e720d61ae5883e794256be4605bb.png"
+    },
+    {
+      "nodeId": "14508:16059",
+      "kind": "export",
+      "index": 0,
+      "sha256": "f331649f56c2265031e15f2223559da147c6f286dfa6dbde62d4a9543712cb2c",
+      "bytes": 380308,
+      "path": "assets/figma/f331649f56c2265031e15f2223559da147c6f286dfa6dbde62d4a9543712cb2c.png"
+    },
+    {
+      "nodeId": "14512:16429",
+      "kind": "export",
+      "index": 0,
+      "sha256": "615259f3f20b3006564b8292a9878fef8fa258de569396f3e18041ae4613f151",
+      "bytes": 847340,
+      "path": "assets/figma/615259f3f20b3006564b8292a9878fef8fa258de569396f3e18041ae4613f151.png"
+    },
+    {
+      "nodeId": "14512:16443",
+      "kind": "export",
+      "index": 0,
+      "sha256": "2ea8f4d12ac92a46cc22003d35a49d484c805f4b584d1681d6595f48d94db887",
+      "bytes": 563804,
+      "path": "assets/figma/2ea8f4d12ac92a46cc22003d35a49d484c805f4b584d1681d6595f48d94db887.png"
+    },
+    {
+      "nodeId": "14512:16436",
+      "kind": "export",
+      "index": 0,
+      "sha256": "123a619e644ef6a7ef0089f6e502b702e235208f7962548097a5117371dcba0d",
+      "bytes": 356664,
+      "path": "assets/figma/123a619e644ef6a7ef0089f6e502b702e235208f7962548097a5117371dcba0d.png"
+    },
+    {
+      "nodeId": "14517:17091",
+      "kind": "export",
+      "index": 0,
+      "sha256": "d571552f6d6cd0f4bfc495e2f20388c64f23c9bd6276a2c7449d608877b0bbf3",
+      "bytes": 982826,
+      "path": "assets/figma/d571552f6d6cd0f4bfc495e2f20388c64f23c9bd6276a2c7449d608877b0bbf3.png"
+    },
+    {
+      "nodeId": "14517:17105",
+      "kind": "export",
+      "index": 0,
+      "sha256": "93ce5b70bb8a63f3e8931337f084eb218aaf3f45a7479c221f69cf44a4da1123",
+      "bytes": 641176,
+      "path": "assets/figma/93ce5b70bb8a63f3e8931337f084eb218aaf3f45a7479c221f69cf44a4da1123.png"
+    },
+    {
+      "nodeId": "14517:17098",
+      "kind": "export",
+      "index": 0,
+      "sha256": "033ec08e38a821610f8b459497b18fbd456012274ba91b055262702698893ef4",
+      "bytes": 424254,
+      "path": "assets/figma/033ec08e38a821610f8b459497b18fbd456012274ba91b055262702698893ef4.png"
+    },
+    {
+      "nodeId": "14518:17730",
+      "kind": "export",
+      "index": 0,
+      "sha256": "66fb18a9e78418f34b1507018b7a99a347c5808b89f011f0419627ca10b20dde",
+      "bytes": 924238,
+      "path": "assets/figma/66fb18a9e78418f34b1507018b7a99a347c5808b89f011f0419627ca10b20dde.png"
+    },
+    {
+      "nodeId": "14518:17744",
+      "kind": "export",
+      "index": 0,
+      "sha256": "937fb202adddd64950be4358c42ad1f2cdf926c123a77c70d90e38241dc7c631",
+      "bytes": 606515,
+      "path": "assets/figma/937fb202adddd64950be4358c42ad1f2cdf926c123a77c70d90e38241dc7c631.png"
+    },
+    {
+      "nodeId": "14518:17737",
+      "kind": "export",
+      "index": 0,
+      "sha256": "1c6c39b45f1d7ed6f6641d460c9350d19796cf7a6f845a61083ff62ec8457ca3",
+      "bytes": 383859,
+      "path": "assets/figma/1c6c39b45f1d7ed6f6641d460c9350d19796cf7a6f845a61083ff62ec8457ca3.png"
+    },
+    {
+      "nodeId": "14521:18373",
+      "kind": "export",
+      "index": 0,
+      "sha256": "ca909c9f9d01bb149fd677ea85b5933c36d4d3e1c2453fcf00ae03458dcd9176",
+      "bytes": 887887,
+      "path": "assets/figma/ca909c9f9d01bb149fd677ea85b5933c36d4d3e1c2453fcf00ae03458dcd9176.png"
+    },
+    {
+      "nodeId": "14521:18387",
+      "kind": "export",
+      "index": 0,
+      "sha256": "d8cf2a00bfadbfd91e17171d4eaf333c69fd769aabfc3d803996e3904ec5689f",
+      "bytes": 604050,
+      "path": "assets/figma/d8cf2a00bfadbfd91e17171d4eaf333c69fd769aabfc3d803996e3904ec5689f.png"
+    },
+    {
+      "nodeId": "14521:18380",
+      "kind": "export",
+      "index": 0,
+      "sha256": "9d047e5ca042074ab56eb2015cc26f7672e5d2396ea85a7ff28ad06661f92be1",
+      "bytes": 375659,
+      "path": "assets/figma/9d047e5ca042074ab56eb2015cc26f7672e5d2396ea85a7ff28ad06661f92be1.png"
+    },
+    {
+      "nodeId": "14530:16747",
+      "kind": "export",
+      "index": 0,
+      "sha256": "b7557a4aef9fd215a4623841b4528c45bd2da9c792d7fb279515e4489cd0ab42",
+      "bytes": 901288,
+      "path": "assets/figma/b7557a4aef9fd215a4623841b4528c45bd2da9c792d7fb279515e4489cd0ab42.png"
+    },
+    {
+      "nodeId": "14530:16761",
+      "kind": "export",
+      "index": 0,
+      "sha256": "2458da5e5f63aa5e751e48833f4a326364618df3e75bbfb205a0c24a0e3beace",
+      "bytes": 628227,
+      "path": "assets/figma/2458da5e5f63aa5e751e48833f4a326364618df3e75bbfb205a0c24a0e3beace.png"
+    },
+    {
+      "nodeId": "14530:16754",
+      "kind": "export",
+      "index": 0,
+      "sha256": "4e499ec21be9a284ef8de7671a254f1428af88f40e3de132fc1046cf90bebdc8",
+      "bytes": 374564,
+      "path": "assets/figma/4e499ec21be9a284ef8de7671a254f1428af88f40e3de132fc1046cf90bebdc8.png"
+    },
+    {
+      "nodeId": "14531:17394",
+      "kind": "export",
+      "index": 0,
+      "sha256": "49842ca2a5b112a9f42485459ed1c0f07d0634f226f6fdd8f36b3c11409e66a2",
+      "bytes": 905722,
+      "path": "assets/figma/49842ca2a5b112a9f42485459ed1c0f07d0634f226f6fdd8f36b3c11409e66a2.png"
+    },
+    {
+      "nodeId": "14531:17408",
+      "kind": "export",
+      "index": 0,
+      "sha256": "82a12d262c98a4ba5ee2aa74de4f1a9363ad2df211245183883b3c6ba33edb37",
+      "bytes": 611089,
+      "path": "assets/figma/82a12d262c98a4ba5ee2aa74de4f1a9363ad2df211245183883b3c6ba33edb37.png"
+    },
+    {
+      "nodeId": "14531:17401",
+      "kind": "export",
+      "index": 0,
+      "sha256": "a4ef81aeb036c7a4817c183216dcb5a56662922649e157cd4a223c34135184e3",
+      "bytes": 406095,
+      "path": "assets/figma/a4ef81aeb036c7a4817c183216dcb5a56662922649e157cd4a223c34135184e3.png"
+    },
+    {
+      "nodeId": "14532:18037",
+      "kind": "export",
+      "index": 0,
+      "sha256": "3df628c945f8f1cc7e9defbe1df882cd676796ad7e18ffb9644af350863dd451",
+      "bytes": 890855,
+      "path": "assets/figma/3df628c945f8f1cc7e9defbe1df882cd676796ad7e18ffb9644af350863dd451.png"
+    },
+    {
+      "nodeId": "14532:18051",
+      "kind": "export",
+      "index": 0,
+      "sha256": "af348163d4058f5536fb12e5644f338d7b2d0dac4848c686dc09cfb7ae02d915",
+      "bytes": 595763,
+      "path": "assets/figma/af348163d4058f5536fb12e5644f338d7b2d0dac4848c686dc09cfb7ae02d915.png"
+    },
+    {
+      "nodeId": "14532:18044",
+      "kind": "export",
+      "index": 0,
+      "sha256": "ca52a983bd694d69e4323e74c38536da46bf460fe2af9b6003627f82246cc7cb",
+      "bytes": 369986,
+      "path": "assets/figma/ca52a983bd694d69e4323e74c38536da46bf460fe2af9b6003627f82246cc7cb.png"
+    },
+    {
+      "nodeId": "14534:18383",
+      "kind": "export",
+      "index": 0,
+      "sha256": "488d5b1cced527b4181163f0b664140e1849457d2ca6eb586d0862e0f3da8b73",
+      "bytes": 825411,
+      "path": "assets/figma/488d5b1cced527b4181163f0b664140e1849457d2ca6eb586d0862e0f3da8b73.png"
+    },
+    {
+      "nodeId": "14534:18397",
+      "kind": "export",
+      "index": 0,
+      "sha256": "3385e7a67f41525d1619e8bcc6695860136d9d4fb1ec88532d373c4a05d99299",
+      "bytes": 551116,
+      "path": "assets/figma/3385e7a67f41525d1619e8bcc6695860136d9d4fb1ec88532d373c4a05d99299.png"
+    },
+    {
+      "nodeId": "14534:18390",
+      "kind": "export",
+      "index": 0,
+      "sha256": "1e155abb924939c719f577b31e0f061519e5cd3ed62f256296b1ff92e112c3b9",
+      "bytes": 356909,
+      "path": "assets/figma/1e155abb924939c719f577b31e0f061519e5cd3ed62f256296b1ff92e112c3b9.png"
+    },
+    {
+      "nodeId": "14534:18729",
+      "kind": "export",
+      "index": 0,
+      "sha256": "9c487d8e58ecfa2bd3cf2305dad9423b7a98fe0532da015215ee0f5837830bd3",
+      "bytes": 855427,
+      "path": "assets/figma/9c487d8e58ecfa2bd3cf2305dad9423b7a98fe0532da015215ee0f5837830bd3.png"
+    },
+    {
+      "nodeId": "14534:18743",
+      "kind": "export",
+      "index": 0,
+      "sha256": "aa2174c4ea57ed97b0a4df6ea83196d09b36792a693b1a3ea9fa360265bec523",
+      "bytes": 577976,
+      "path": "assets/figma/aa2174c4ea57ed97b0a4df6ea83196d09b36792a693b1a3ea9fa360265bec523.png"
+    },
+    {
+      "nodeId": "14534:18736",
+      "kind": "export",
+      "index": 0,
+      "sha256": "43b4911c16fedbfaf39a14c6bf47fc9a72874934504a8369421c13c588c5e48a",
+      "bytes": 356230,
+      "path": "assets/figma/43b4911c16fedbfaf39a14c6bf47fc9a72874934504a8369421c13c588c5e48a.png"
+    }
+  ]
+}

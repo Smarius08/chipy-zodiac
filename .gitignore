@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+output/qa/
+*.log
+.env
+
+# Restored automatically from verified asset-packs archives.
+assets/figma/

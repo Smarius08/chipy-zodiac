@@ -1,0 +1,45 @@
+{
+  "archives": [
+    {
+      "path": "asset-packs/figma-assets-01.zip",
+      "bytes": 18282806,
+      "sha256": "a40cfc83d2ba51691a2d6858dc71b95e7b79d5f292658fefb7a8e614d379336c"
+    },
+    {
+      "path": "asset-packs/figma-assets-02.zip",
+      "bytes": 19357952,
+      "sha256": "d2dadb122a84b27351f72a8d6d6bdb44e4bf234d758d2aa09c4bf888e6210264"
+    },
+    {
+      "path": "asset-packs/figma-assets-03.zip",
+      "bytes": 18614218,
+      "sha256": "43011b980be04e0f6583ed16496eb547ca26cfc87173c34725ab44b70734daf7"
+    },
+    {
+      "path": "asset-packs/figma-assets-04.zip",
+      "bytes": 19543390,
+      "sha256": "32ab3c57d919e2e3024a7f842c7eefc412006761646e0c9c093129c2cc126f17"
+    },
+    {
+      "path": "asset-packs/figma-assets-05.zip",
+      "bytes": 19276793,
+      "sha256": "a46dcd3a4c152efe060d661892a839520dda5ef5f98a91ccf714ed94a8a7bc84"
+    },
+    {
+      "path": "asset-packs/figma-assets-06.zip",
+      "bytes": 19076112,
+      "sha256": "4fb5bde92e3a8b1913da40077f5c66a1959893c751aaf38d01744de7bf33e519"
+    },
+    {
+      "path": "asset-packs/figma-assets-07.zip",
+      "bytes": 17791825,
+      "sha256": "eb4128a30cbf8f7b8aba7abe702b58132b7b92a628cbadf852c62e9ba15b11f5"
+    },
+    {
+      "path": "asset-packs/figma-assets-08.zip",
+      "bytes": 17681479,
+      "sha256": "31835ff83bf49fd0072dabcdbc61ea505241a292934d628b760f6d141f24db8f"
+    }
+  ],
+  "file_count": 414
+}

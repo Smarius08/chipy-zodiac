@@ -1,0 +1,8 @@
+Build the complete Chipy Zodiac HTML mockup described in BUILD-PROMPT.txt.
+
+Start by reading CLAUDE.md, docs/CURRENT-REQUIREMENTS.md and README.md. The original HTML files are in sources/, project MD files in docs/handoff/, current Jira description snapshots in docs/jira/, and downloaded Figma assets/mappings in references/figma/ and assets/figma/. Use these local sources; do not claim you cannot access an attachment without checking the package.
+
+Run bash scripts/setup.sh and npm run preflight. Report whether npm run doctor confirms browser readiness. Then implement output/zodiac-lucky-day-full-mockup.html, render it, test it and correct defects. The full build prompt governs behavior and scope.
+
+Do not stop at a plan. Do not copy the wireframe's obsolete calculations or cross-sign DOB behavior. Use the approved fixed sign messages and verified fixtures. Keep all calculation formulas out of browser code. Keep unresolved visual decisions explicit and quote any unreconciled requirement conflict for Marius to review. No commit, push, Jira write, Figma edit or deployment is authorized by this starter instruction.
+
